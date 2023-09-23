@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-BR"><!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://ricardoantunes.com.br/xmlrpc.php">
+	<meta name="theme-color" content="#00885d">
+	<meta name="msapplication-navbutton-color" content="#00885d">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00885d">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<!--<script async="" src="js/gtm.js"></script>-->
+	<script type="text/javascript">var jnews_ajax_url = '/?ajax-request=jnews'</script>
+	<script
+		type="text/javascript">; window.jnews = window.jnews || {}, window.jnews.library = window.jnews.library || {}, window.jnews.library = function () { "use strict"; var e = this; e.win = window, e.doc = document, e.noop = function () { }, e.globalBody = e.doc.getElementsByTagName("body")[0], e.globalBody = e.globalBody ? e.globalBody : e.doc, e.win.jnewsDataStorage = e.win.jnewsDataStorage || { _storage: new WeakMap, put: function (e, t, n) { this._storage.has(e) || this._storage.set(e, new Map), this._storage.get(e).set(t, n) }, get: function (e, t) { return this._storage.get(e).get(t) }, has: function (e, t) { return this._storage.has(e) && this._storage.get(e).has(t) }, remove: function (e, t) { var n = this._storage.get(e).delete(t); return 0 === !this._storage.get(e).size && this._storage.delete(e), n } }, e.windowWidth = function () { return e.win.innerWidth || e.docEl.clientWidth || e.globalBody.clientWidth }, e.windowHeight = function () { return e.win.innerHeight || e.docEl.clientHeight || e.globalBody.clientHeight }, e.requestAnimationFrame = e.win.requestAnimationFrame || e.win.webkitRequestAnimationFrame || e.win.mozRequestAnimationFrame || e.win.msRequestAnimationFrame || window.oRequestAnimationFrame || function (e) { return setTimeout(e, 1e3 / 60) }, e.cancelAnimationFrame = e.win.cancelAnimationFrame || e.win.webkitCancelAnimationFrame || e.win.webkitCancelRequestAnimationFrame || e.win.mozCancelAnimationFrame || e.win.msCancelRequestAnimationFrame || e.win.oCancelRequestAnimationFrame || function (e) { clearTimeout(e) }, e.classListSupport = "classList" in document.createElement("_"), e.hasClass = e.classListSupport ? function (e, t) { return e.classList.contains(t) } : function (e, t) { return e.className.indexOf(t) >= 0 }, e.addClass = e.classListSupport ? function (t, n) { e.hasClass(t, n) || t.classList.add(n) } : function (t, n) { e.hasClass(t, n) || (t.className += " " + n) }, e.removeClass = e.classListSupport ? function (t, n) { e.hasClass(t, n) && t.classList.remove(n) } : function (t, n) { e.hasClass(t, n) && (t.className = t.className.replace(n, "")) }, e.objKeys = function (e) { var t = []; for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.push(n); return t }, e.isObjectSame = function (e, t) { var n = !0; return JSON.stringify(e) !== JSON.stringify(t) && (n = !1), n }, e.extend = function () { for (var e, t, n, o = arguments[0] || {}, i = 1, a = arguments.length; i < a; i++)if (null !== (e = arguments[i])) for (t in e) o !== (n = e[t]) && void 0 !== n && (o[t] = n); return o }, e.dataStorage = e.win.jnewsDataStorage, e.isVisible = function (e) { return 0 !== e.offsetWidth && 0 !== e.offsetHeight || e.getBoundingClientRect().length }, e.getHeight = function (e) { return e.offsetHeight || e.clientHeight || e.getBoundingClientRect().height }, e.getWidth = function (e) { return e.offsetWidth || e.clientWidth || e.getBoundingClientRect().width }, e.supportsPassive = !1; try { var t = Object.defineProperty({}, "passive", { get: function () { e.supportsPassive = !0 } }); "createEvent" in e.doc ? e.win.addEventListener("test", null, t) : "fireEvent" in e.doc && e.win.attachEvent("test", null) } catch (e) { } e.passiveOption = !!e.supportsPassive && { passive: !0 }, e.setStorage = function (e, t) { e = "jnews-" + e; var n = { expired: Math.floor(((new Date).getTime() + 432e5) / 1e3) }; t = Object.assign(n, t); localStorage.setItem(e, JSON.stringify(t)) }, e.getStorage = function (e) { e = "jnews-" + e; var t = localStorage.getItem(e); return null !== t && 0 < t.length ? JSON.parse(localStorage.getItem(e)) : {} }, e.expiredStorage = function () { var t, n = "jnews-"; for (var o in localStorage) o.indexOf(n) > -1 && "undefined" !== (t = e.getStorage(o.replace(n, ""))).expired && t.expired < Math.floor((new Date).getTime() / 1e3) && localStorage.removeItem(o) }, e.addEvents = function (t, n, o) { for (var i in n) { var a = ["touchstart", "touchmove"].indexOf(i) >= 0 && !o && e.passiveOption; "createEvent" in e.doc ? t.addEventListener(i, n[i], a) : "fireEvent" in e.doc && t.attachEvent("on" + i, n[i]) } }, e.removeEvents = function (t, n) { for (var o in n) "createEvent" in e.doc ? t.removeEventListener(o, n[o]) : "fireEvent" in e.doc && t.detachEvent("on" + o, n[o]) }, e.triggerEvents = function (t, n, o) { var i; o = o || { detail: null }; return "createEvent" in e.doc ? (!(i = e.doc.createEvent("CustomEvent") || new CustomEvent(n)).initCustomEvent || i.initCustomEvent(n, !0, !1, o), void t.dispatchEvent(i)) : "fireEvent" in e.doc ? ((i = e.doc.createEventObject()).eventType = n, void t.fireEvent("on" + i.eventType, i)) : void 0 }, e.getParents = function (t, n) { void 0 === n && (n = e.doc); for (var o = [], i = t.parentNode, a = !1; !a;)if (i) { var r = i; r.querySelectorAll(n).length ? a = !0 : (o.push(r), i = r.parentNode) } else o = [], a = !0; return o }, e.forEach = function (e, t, n) { for (var o = 0, i = e.length; o < i; o++)t.call(n, e[o], o) }, e.getText = function (e) { return e.innerText || e.textContent }, e.setText = function (e, t) { var n = "object" == typeof t ? t.innerText || t.textContent : t; e.innerText && (e.innerText = n), e.textContent && (e.textContent = n) }, e.httpBuildQuery = function (t) { return e.objKeys(t).reduce(function t(n) { var o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null; return function (i, a) { var r = n[a]; a = encodeURIComponent(a); var s = o ? "".concat(o, "[").concat(a, "]") : a; return null == r || "function" == typeof r ? (i.push("".concat(s, "=")), i) : ["number", "boolean", "string"].includes(typeof r) ? (i.push("".concat(s, "=").concat(encodeURIComponent(r))), i) : (i.push(e.objKeys(r).reduce(t(r, s), []).join("&")), i) } }(t), []).join("&") }, e.get = function (t, n, o, i) { return o = "function" == typeof o ? o : e.noop, e.ajax("GET", t, n, o, i) }, e.post = function (t, n, o, i) { return o = "function" == typeof o ? o : e.noop, e.ajax("POST", t, n, o, i) }, e.ajax = function (t, n, o, i, a) { var r = new XMLHttpRequest, s = n, c = e.httpBuildQuery(o); if (t = -1 != ["GET", "POST"].indexOf(t) ? t : "GET", r.open(t, s + ("GET" == t ? "?" + c : ""), !0), "POST" == t && r.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), r.setRequestHeader("X-Requested-With", "XMLHttpRequest"), r.onreadystatechange = function () { 4 === r.readyState && 200 <= r.status && 300 > r.status && "function" == typeof i && i.call(void 0, r.response) }, void 0 !== a && !a) { return { xhr: r, send: function () { r.send("POST" == t ? c : null) } } } return r.send("POST" == t ? c : null), { xhr: r } }, e.scrollTo = function (t, n, o) { function i(e, t, n) { this.start = this.position(), this.change = e - this.start, this.currentTime = 0, this.increment = 20, this.duration = void 0 === n ? 500 : n, this.callback = t, this.finish = !1, this.animateScroll() } return Math.easeInOutQuad = function (e, t, n, o) { return (e /= o / 2) < 1 ? n / 2 * e * e + t : -n / 2 * (--e * (e - 2) - 1) + t }, i.prototype.stop = function () { this.finish = !0 }, i.prototype.move = function (t) { e.doc.documentElement.scrollTop = t, e.globalBody.parentNode.scrollTop = t, e.globalBody.scrollTop = t }, i.prototype.position = function () { return e.doc.documentElement.scrollTop || e.globalBody.parentNode.scrollTop || e.globalBody.scrollTop }, i.prototype.animateScroll = function () { this.currentTime += this.increment; var t = Math.easeInOutQuad(this.currentTime, this.start, this.change, this.duration); this.move(t), this.currentTime < this.duration && !this.finish ? e.requestAnimationFrame.call(e.win, this.animateScroll.bind(this)) : this.callback && "function" == typeof this.callback && this.callback() }, new i(t, n, o) }, e.unwrap = function (t) { var n, o = t; e.forEach(t, (function (e, t) { n ? n += e : n = e })), o.replaceWith(n) }, e.performance = { start: function (e) { performance.mark(e + "Start") }, stop: function (e) { performance.mark(e + "End"), performance.measure(e, e + "Start", e + "End") } }, e.fps = function () { var t = 0, n = 0, o = 0; !function () { var i = t = 0, a = 0, r = 0, s = document.getElementById("fpsTable"), c = function (t) { void 0 === document.getElementsByTagName("body")[0] ? e.requestAnimationFrame.call(e.win, (function () { c(t) })) : document.getElementsByTagName("body")[0].appendChild(t) }; null === s && ((s = document.createElement("div")).style.position = "fixed", s.style.top = "120px", s.style.left = "10px", s.style.width = "100px", s.style.height = "20px", s.style.border = "1px solid black", s.style.fontSize = "11px", s.style.zIndex = "100000", s.style.backgroundColor = "white", s.id = "fpsTable", c(s)); var l = function () { o++, n = Date.now(), (a = (o / (r = (n - t) / 1e3)).toPrecision(2)) != i && (i = a, s.innerHTML = i + "fps"), 1 < r && (t = n, o = 0), e.requestAnimationFrame.call(e.win, l) }; l() }() }, e.instr = function (e, t) { for (var n = 0; n < t.length; n++)if (-1 !== e.toLowerCase().indexOf(t[n].toLowerCase())) return !0 }, e.winLoad = function (t, n) { function o(o) { if ("complete" === e.doc.readyState || "interactive" === e.doc.readyState) return !o || n ? setTimeout(t, n || 1) : t(o), 1 } o() || e.addEvents(e.win, { load: o }) }, e.docReady = function (t, n) { function o(o) { if ("complete" === e.doc.readyState || "interactive" === e.doc.readyState) return !o || n ? setTimeout(t, n || 1) : t(o), 1 } o() || e.addEvents(e.doc, { DOMContentLoaded: o }) }, e.fireOnce = function () { e.docReady((function () { e.assets = e.assets || [], e.assets.length && (e.boot(), e.load_assets()) }), 50) }, e.boot = function () { e.length && e.doc.querySelectorAll("style[media]").forEach((function (e) { "not all" == e.getAttribute("media") && e.removeAttribute("media") })) }, e.create_js = function (t, n) { var o = e.doc.createElement("script"); switch (o.setAttribute("src", t), n) { case "defer": o.setAttribute("defer", !0); break; case "async": o.setAttribute("async", !0); break; case "deferasync": o.setAttribute("defer", !0), o.setAttribute("async", !0) }e.globalBody.appendChild(o) }, e.load_assets = function () { "object" == typeof e.assets && e.forEach(e.assets.slice(0), (function (t, n) { var o = ""; t.defer && (o += "defer"), t.async && (o += "async"), e.create_js(t.url, o); var i = e.assets.indexOf(t); i > -1 && e.assets.splice(i, 1) })), e.assets = jnewsoption.au_scripts = window.jnewsads = [] }, e.setCookie = function (e, t, n) { var o = ""; if (n) { var i = new Date; i.setTime(i.getTime() + 24 * n * 60 * 60 * 1e3), o = "; expires=" + i.toUTCString() } document.cookie = e + "=" + (t || "") + o + "; path=/" }, e.getCookie = function (e) { for (var t = e + "=", n = document.cookie.split(";"), o = 0; o < n.length; o++) { for (var i = n[o]; " " == i.charAt(0);)i = i.substring(1, i.length); if (0 == i.indexOf(t)) return i.substring(t.length, i.length) } return null }, e.eraseCookie = function (e) { document.cookie = e + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;" }, e.docReady((function () { e.globalBody = e.globalBody == e.doc ? e.doc.getElementsByTagName("body")[0] : e.globalBody, e.globalBody = e.globalBody ? e.globalBody : e.doc })), e.winLoad((function () { e.winLoad((function () { var t = !1; if (void 0 !== window.jnewsadmin) if (void 0 !== window.file_version_checker) { var n = e.objKeys(window.file_version_checker); n.length ? n.forEach((function (e) { t || "10.0.4" === window.file_version_checker[e] || (t = !0) })) : t = !0 } else t = !0; t && (window.jnewsHelper.getMessage(), window.jnewsHelper.getNotice()) }), 2500) })) }, window.jnews.library = new window.jnews.library;</script>
+	<script
+		type="module">;/*! instant.page v5.1.1 - (C) 2019-2020 Alexandre Dieulot - https://instant.page/license */
+			let t, e; const n = new Set, o = document.createElement("link"), i = o.relList && o.relList.supports && o.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype, s = "instantAllowQueryString" in document.body.dataset, a = "instantAllowExternalLinks" in document.body.dataset, r = "instantWhitelist" in document.body.dataset, c = "instantMousedownShortcut" in document.body.dataset, d = 1111; let l = 65, u = !1, f = !1, m = !1; if ("instantIntensity" in document.body.dataset) { const t = document.body.dataset.instantIntensity; if ("mousedown" == t.substr(0, 9)) u = !0, "mousedown-only" == t && (f = !0); else if ("viewport" == t.substr(0, 8)) navigator.connection && (navigator.connection.saveData || navigator.connection.effectiveType && navigator.connection.effectiveType.includes("2g")) || ("viewport" == t ? document.documentElement.clientWidth * document.documentElement.clientHeight < 45e4 && (m = !0) : "viewport-all" == t && (m = !0)); else { const e = parseInt(t); isNaN(e) || (l = e) } } if (i) { const n = { capture: !0, passive: !0 }; if (f || document.addEventListener("touchstart", (function (t) { e = performance.now(); const n = t.target.closest("a"); h(n) && v(n.href) }), n), u ? c || document.addEventListener("mousedown", (function (t) { const e = t.target.closest("a"); h(e) && v(e.href) }), n) : document.addEventListener("mouseover", (function (n) { if (performance.now() - e < d) return; if (!("closest" in n.target)) return; const o = n.target.closest("a"); h(o) && (o.addEventListener("mouseout", p, { passive: !0 }), t = setTimeout((() => { v(o.href), t = void 0 }), l)) }), n), c && document.addEventListener("mousedown", (function (t) { if (performance.now() - e < d) return; const n = t.target.closest("a"); if (t.which > 1 || t.metaKey || t.ctrlKey) return; if (!n) return; n.addEventListener("click", (function (t) { 1337 != t.detail && t.preventDefault() }), { capture: !0, passive: !1, once: !0 }); const o = new MouseEvent("click", { view: window, bubbles: !0, cancelable: !1, detail: 1337 }); n.dispatchEvent(o) }), n), m) { let t; (t = window.requestIdleCallback ? t => { requestIdleCallback(t, { timeout: 1500 }) } : t => { t() })((() => { const t = new IntersectionObserver((e => { e.forEach((e => { if (e.isIntersecting) { const n = e.target; t.unobserve(n), v(n.href) } })) })); document.querySelectorAll("a").forEach((e => { h(e) && t.observe(e) })) })) } } function p(e) { e.relatedTarget && e.target.closest("a") == e.relatedTarget.closest("a") || t && (clearTimeout(t), t = void 0) } function h(t) { if (t && t.href && (!r || "instant" in t.dataset) && (a || t.origin == location.origin || "instant" in t.dataset) && ["http:", "https:"].includes(t.protocol) && ("http:" != t.protocol || "https:" != location.protocol) && (s || !t.search || "instant" in t.dataset) && !(t.hash && t.pathname + t.search == location.pathname + location.search || "noInstant" in t.dataset)) return !0 } function v(t) { if (n.has(t)) return; const e = document.createElement("link"); e.rel = "prefetch", e.href = t, document.head.appendChild(e), n.add(t) }</script>
+	<link media="all" href="css/autoptimize_b2187b217fc64f6a74df9df02bb01726.css" rel="stylesheet">
+	<title>Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru - Blog do
+		Ricardo Antunes</title>
+	<link rel="canonical"
+		href="https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="article">
+	<meta property="og:title"
+		content="Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru">
+	<meta property="og:description"
+		content="EXCLUSIVO,�&nbsp;Por Danilo Duarte – Uma ex-servidora do Município de Caruaru, que não quis se identificar, temendo represálias, entrou em contato conosco para denunciar suposto assédio moral e outros abusos da Prefeitura contra alguns servidores municipais. Segundo informou, nos últimos dias, alguns funcionários foram pegos de surpresa com o fim do contrato com o órgão público. […]">
+	<meta property="og:url"
+		content="https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/">
+	<meta property="og:site_name" content="Blog do Ricardo Antunes">
+	<meta property="article:published_time" content="2023-09-23T11:00:30+00:00">
+	<meta property="article:modified_time" content="2023-09-22T18:49:06+00:00">
+	<meta property="og:image" content="images/header-blog-assedio-moral-arraesecenteno.jpg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="600">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="Danilo Duarte">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Escrito por">
+	<meta name="twitter:data1" content="Danilo Duarte">
+	<meta name="twitter:label2" content="Est. tempo de leitura">
+	<meta name="twitter:data2" content="5 minutos">
+	<script type="application/ld+json"
+		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/","url":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/","name":"Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru - Blog do Ricardo Antunes","isPartOf":{"@id":"https://ricardoantunes.com.br/#website"},"primaryImageOfPage":{"@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#primaryimage"},"image":{"@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#primaryimage"},"thumbnailUrl":"https://ricardoantunes.com.br/wp-content/uploads/2023/09/header-blog-assedio-moral-arraesecenteno.jpg","datePublished":"2023-09-23T11:00:30+00:00","dateModified":"2023-09-22T18:49:06+00:00","author":{"@id":"https://ricardoantunes.com.br/#/schema/person/6f861734400c27e7bbf43bc48e12da83"},"breadcrumb":{"@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/"]}]},{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#primaryimage","url":"https://ricardoantunes.com.br/wp-content/uploads/2023/09/header-blog-assedio-moral-arraesecenteno.jpg","contentUrl":"https://ricardoantunes.com.br/wp-content/uploads/2023/09/header-blog-assedio-moral-arraesecenteno.jpg","width":1000,"height":600,"caption":"Ex-servidora diz que testemunhou \"muitos abusos\" na Prefeitura de Caruaru"},{"@type":"BreadcrumbList","@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://ricardoantunes.com.br/"},{"@type":"ListItem","position":2,"name":"Arquivo","item":"https://ricardoantunes.com.br/arquivo/"},{"@type":"ListItem","position":3,"name":"Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru"}]},{"@type":"WebSite","@id":"https://ricardoantunes.com.br/#website","url":"https://ricardoantunes.com.br/","name":"Blog do Ricardo Antunes","description":"Debates, polêmicas e notícias exclusivas","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ricardoantunes.com.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-BR"},{"@type":"Person","@id":"https://ricardoantunes.com.br/#/schema/person/6f861734400c27e7bbf43bc48e12da83","name":"Danilo Duarte","image":{"@type":"ImageObject","inLanguage":"pt-BR","@id":"https://ricardoantunes.com.br/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/48d0494902c803b7074a9f212f722804?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/48d0494902c803b7074a9f212f722804?s=96&d=mm&r=g","caption":"Danilo Duarte"},"url":"https://ricardoantunes.com.br/author/danilo-duarte/"},{"@type":"VideoObject","@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/#video","name":"Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru - Blog do Ricardo Antunes","isPartOf":{"@id":"https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/"},"thumbnailUrl":"https://ricardoantunes.com.br/wp-content/uploads/2023/09/cs4ugelae_q.jpg","description":"EXCLUSIVO, Por Danilo Duarte - Uma ex-servidora do Município de Caruaru, que não quis se identificar, temendo represálias, entrou em contato conosco para denunciar suposto assédio moral e outros abusos da Prefeitura contra alguns servidores municipais. Segundo informou, nos últimos dias, alguns func","uploadDate":"2023-09-23","width":480,"height":270,"embedUrl":"https://www.youtube.com/embed/cs4UGELaE_Q","duration":"PT3M45S","isFamilyFriendly":true,"inLanguage":"pt-BR"}]}</script>
+	<meta property="og:video" content="https://www.youtube.com/embed/cs4UGELaE_Q">
+	<meta property="og:video:type" content="text/html">
+	<meta property="og:video:duration" content="225">
+	<meta property="og:video:width" content="480">
+	<meta property="og:video:height" content="270">
+	<meta property="ya:ovs:adult" content="false">
+	<meta property="ya:ovs:upload_date" content="2023-09-23T11:00:30+00:00">
+	<meta property="ya:ovs:allow_embed" content="true">
+	<link rel="dns-prefetch" href="//www.googletagmanager.com">
+	<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" title="Feed para Blog do Ricardo Antunes »"
+		href="https://ricardoantunes.com.br/feed/">
+	<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Blog do Ricardo Antunes »"
+		href="https://ricardoantunes.com.br/comments/feed/">
+	<link rel="alternate" type="application/rss+xml"
+		title="Feed de comentários para Blog do Ricardo Antunes » Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru"
+		href="https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/feed/">
+	<script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	
+	<link rel="https://api.w.org/" href="https://ricardoantunes.com.br/wp-json/">
+	<link rel="alternate" type="application/json" href="https://ricardoantunes.com.br/wp-json/wp/v2/posts/145698">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ricardoantunes.com.br/xmlrpc.php?rsd">
+	<meta name="generator" content="WordPress 6.3.1">
+	<link rel="shortlink" href="https://ricardoantunes.com.br/?p=145698">
+	<link rel="alternate" type="application/json+oembed"
+		href="https://ricardoantunes.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F">
+	<link rel="alternate" type="text/xml+oembed"
+		href="https://ricardoantunes.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F&amp;format=xml">
+	<meta name="generator" content="Site Kit by Google 1.107.0">
+	<script src="js/api.js" async="" defer=""></script>
+	<script>document.addEventListener("DOMContentLoaded", function () {
+			var div, i,
+				youtubePlayers = document.getElementsByClassName("video-seo-youtube-player");
+			for (i = 0; i < youtubePlayers.length; i++) {
+				div = document.createElement("div");
+				div.className = "video-seo-youtube-embed-loader";
+				div.setAttribute("data-id", youtubePlayers[i].dataset.id);
+				div.setAttribute("tabindex", "0");
+				div.setAttribute("role", "button");
+				div.setAttribute("aria-label", "Load YouTube video");
+				div.innerHTML = videoSEOGenerateYouTubeThumbnail(youtubePlayers[i].dataset.id);
+				div.addEventListener("click", videoSEOGenerateYouTubeIframe);
+				div.addEventListener("keydown", videoSEOYouTubeThumbnailHandleKeydown);
+				div.addEventListener("keyup", videoSEOYouTubeThumbnailHandleKeyup);
+				youtubePlayers[i].appendChild(div);
+			}
+		});
+
+		function videoSEOGenerateYouTubeThumbnail(id) {
+			var thumbnail = '<picture class="video-seo-youtube-picture">\n' +
+				'<source class="video-seo-source-to-maybe-replace" media="(min-width: 801px)" srcset="https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg" >\n' +
+				'<source class="video-seo-source-hq" media="(max-width: 800px)" srcset="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg">\n' +
+				'<img onload="videoSEOMaybeReplaceMaxResSourceWithHqSource( event );" src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" width="480" height="360" loading="eager" alt="">\n' +
+				'</picture>\n',
+				play = '<div class="video-seo-youtube-player-play"></div>';
+			return thumbnail.replace("ID", id) + play;
+		}
+
+		function videoSEOMaybeReplaceMaxResSourceWithHqSource(event) {
+			var sourceMaxRes,
+				sourceHighQuality,
+				loadedThumbnail = event.target,
+				parent = loadedThumbnail.parentNode;
+
+			if (loadedThumbnail.naturalWidth < 150) {
+				sourceMaxRes = parent.querySelector(".video-seo-source-to-maybe-replace");
+				sourceHighQuality = parent.querySelector(".video-seo-source-hq");
+				sourceMaxRes.srcset = sourceHighQuality.srcset;
+				parent.className = "video-seo-youtube-picture video-seo-youtube-picture-replaced-srcset";
+			}
+		}
+
+		function videoSEOYouTubeThumbnailHandleKeydown(event) {
+			if (event.keyCode !== 13 && event.keyCode !== 32) {
+				return;
+			}
+
+			if (event.keyCode === 13) {
+				videoSEOGenerateYouTubeIframe(event);
+			}
+
+			if (event.keyCode === 32) {
+				event.preventDefault();
+			}
+		}
+
+		function videoSEOYouTubeThumbnailHandleKeyup(event) {
+			if (event.keyCode !== 32) {
+				return;
+			}
+
+			videoSEOGenerateYouTubeIframe(event);
+		}
+
+		function videoSEOGenerateYouTubeIframe(event) {
+			var el = (event.type === "click") ? this : event.target,
+				iframe = document.createElement("iframe");
+
+			iframe.setAttribute("src", "https://www.youtube.com/embed/" + el.dataset.id + "?autoplay=1&enablejsapi=1&origin=https%3A%2F%2Fricardoantunes.com.br");
+			iframe.setAttribute("frameborder", "0");
+			iframe.setAttribute("allowfullscreen", "1");
+			iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+			el.parentNode.replaceChild(iframe, el);
+		}</script>
+	<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+	<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+	<meta name="generator"
+		content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<meta name="onesignal" content="wordpress-plugin">
+	<script>window.OneSignal = window.OneSignal || [];
+
+		OneSignal.push(function () {
+			OneSignal.SERVICE_WORKER_UPDATER_PATH = 'OneSignalSDKUpdaterWorker.js';
+			OneSignal.SERVICE_WORKER_PATH = 'OneSignalSDKWorker.js';
+			OneSignal.SERVICE_WORKER_PARAM = { scope: '/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/push/onesignal/' };
+			OneSignal.setDefaultNotificationUrl("https://ricardoantunes.com.br");
+			var oneSignal_options = {};
+			window._oneSignalInitOptions = oneSignal_options;
+
+			oneSignal_options['wordpress'] = true;
+			oneSignal_options['appId'] = '02f37ede-82e4-4d20-916c-0d6861a8ae16';
+			oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+			oneSignal_options['welcomeNotification'] = {};
+			oneSignal_options['welcomeNotification']['title'] = "";
+			oneSignal_options['welcomeNotification']['message'] = "";
+			oneSignal_options['path'] = "https://ricardoantunes.com.br/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+			oneSignal_options['safari_web_id'] = "web.onesignal.auto.15375e9b-dec0-4164-84de-dd8ada8f8fb7";
+			oneSignal_options['promptOptions'] = {};
+			oneSignal_options['promptOptions']['actionMessage'] = "Aceite as notificações e receba noticias quentinhas todo dia!";
+			oneSignal_options['promptOptions']['acceptButtonText'] = "ACEITAR";
+			oneSignal_options['promptOptions']['cancelButtonText'] = "NÃO, OBRIGADO!";
+			oneSignal_options['notifyButton'] = {};
+			oneSignal_options['notifyButton']['enable'] = true;
+			oneSignal_options['notifyButton']['position'] = 'bottom-right';
+			oneSignal_options['notifyButton']['theme'] = 'default';
+			oneSignal_options['notifyButton']['size'] = 'small';
+			oneSignal_options['notifyButton']['showCredit'] = false;
+			oneSignal_options['notifyButton']['text'] = {};
+			oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Receber notificações';
+			oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Você está inscrito em nossas notificações';
+			oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Você bloqueou notificações';
+			oneSignal_options['notifyButton']['text']['message.action.subscribed'] = 'Agora você faz parte da nossa comunidade!';
+			oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = 'Estamos felizes em ter você de volta!';
+			oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Você não receberá mais notificações';
+			oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Gerenciar Notificações';
+			oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'ACEITAR';
+			oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'CANCELAR NOTIFICAÇÕES';
+			oneSignal_options['notifyButton']['text']['dialog.blocked.title'] = 'Desbloquear notificações';
+			oneSignal_options['notifyButton']['text']['dialog.blocked.message'] = 'Siga estas instruções para permitir notificações:';
+			oneSignal_options['notifyButton']['offset'] = {};
+			OneSignal.init(window._oneSignalInitOptions);
+			OneSignal.showSlidedownPrompt();
+		});
+
+		function documentInitOneSignal() {
+			var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+			var oneSignalLinkClickHandler = function (event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); }; for (var i = 0; i < oneSignal_elements.length; i++)
+				oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+		}
+
+		if (document.readyState === 'complete') {
+			documentInitOneSignal();
+		}
+		else {
+			window.addEventListener("load", function (event) {
+				documentInitOneSignal();
+			});
+		}</script>
+	
+	<script
+		type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","@id":"https:\/\/ricardoantunes.com.br\/#organization","url":"https:\/\/ricardoantunes.com.br\/","name":"","logo":{"@type":"ImageObject","url":""},"sameAs":["https:\/\/www.facebook.com\/blogricardoantunes\/","https:\/\/twitter.com\/blogricaantunes","https:\/\/www.instagram.com\/ricardoantunesblog\/","https:\/\/www.youtube.com\/@blogricardoantunes"]}</script>
+	<script
+		type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"https:\/\/ricardoantunes.com.br\/#website","url":"https:\/\/ricardoantunes.com.br\/","name":"","potentialAction":{"@type":"SearchAction","target":"https:\/\/ricardoantunes.com.br\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+	<link rel="icon" href="images/cropped-cropped-Logo-Favicon-Ricardo-Antunes-32x32.png" sizes="32x32">
+	<link rel="icon" href="images/cropped-cropped-Logo-Favicon-Ricardo-Antunes-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/cropped-cropped-Logo-Favicon-Ricardo-Antunes-180x180.png">
+	<meta name="msapplication-TileImage"
+		content="https://ricardoantunes.com.br/wp-content/uploads/2023/02/cropped-cropped-Logo-Favicon-Ricardo-Antunes-270x270.png">
+</head>
+
+<body
+	class="post-template-default single single-post postid-145698 single-format-standard wp-embed-responsive non-logged-in jeg_toggle_light jeg_single_tpl_1 jnews jsc_normal elementor-default elementor-kit-9">
+	<div class="jeg_ad jeg_ad_top jnews_header_top_ads">
+		<div class="ads-wrapper  "></div>
+	</div>
+	<div class="jeg_viewport">
+		<div class="jeg_header_wrapper">
+			<div class="jeg_header_instagram_wrapper"></div>
+			<div class="jeg_header normal">
+				<div class="jeg_topbar jeg_container jeg_navbar_wrapper normal">
+					<div class="container">
+						<div class="jeg_nav_row">
+							<div class="jeg_nav_col jeg_nav_left  jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignleft">
+									<div class="jeg_nav_item socials_widget jeg_social_icon_block rounded"> <a
+											href="https://www.facebook.com/blogricardoantunes/" target="_blank"
+											rel="external noopener nofollow" class="jeg_facebook"><i
+												class="fa fa-facebook"></i> </a><a
+											href="https://twitter.com/blogricaantunes" target="_blank"
+											rel="external noopener nofollow" class="jeg_twitter"><i
+												class="fa fa-twitter"><span class="jeg-icon icon-twitter"><svg
+														xmlns="http://www.w3.org/2000/svg" height="1em"
+														viewBox="0 0 512 512">
+														<path
+															d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+														</path>
+													</svg></span></i> </a><a
+											href="https://www.instagram.com/ricardoantunesblog/" target="_blank"
+											rel="external noopener nofollow" class="jeg_instagram"><i
+												class="fa fa-instagram"></i> </a><a
+											href="https://www.youtube.com/@blogricardoantunes" target="_blank"
+											rel="external noopener nofollow" class="jeg_youtube"><i
+												class="fa fa-youtube-play"></i> </a><a href="" target="_blank"
+											rel="external noopener nofollow" class="jeg_telegram"><i
+												class="fa fa-telegram"></i> </a><a href="" target="_blank"
+											rel="external noopener nofollow" class="jeg_whatsapp"><i
+												class="fa fa-whatsapp"></i> </a></div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_center  jeg_nav_grow">
+								<div class="item_wrap jeg_nav_aligncenter">
+									<div class="jeg_nav_item jeg_top_date"> sábado, 23 de setembro de 2023</div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_right  jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignright">
+									<div class="jeg_nav_item jeg_button_1"> <a
+											href="https://news.google.com/publications/CAAqBwgKMJLfkwswqP6oAw?ceid=BR:pt-419&amp;oc=3"
+											class="btn outline " target="_blank" rel="nofollow"> <i
+												class="fa fa-google"></i> Siga-nos no Google News </a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jeg_midbar jeg_container jeg_navbar_wrapper normal">
+					<div class="container">
+						<div class="jeg_nav_row">
+							<div class="jeg_nav_col jeg_nav_left jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignleft">
+									<div class="jeg_nav_item jeg_logo jeg_desktop_logo">
+										<div class="site-title"> <a href="https://ricardoantunes.com.br/"
+												style="padding: 0 0 0 0;"> <img class="jeg_logo_img"
+													src="images/Logo-300px-Ricardo-Antunes.png"
+													srcset="images/Logo-300px-Ricardo-Antunes.png 1x, images/Logo-300px-Ricardo-Antunes.png 2x"
+													alt="Blog do Ricardo Antunes"
+													data-light-src="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+													data-light-srcset="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x"
+													data-dark-src="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+													data-dark-srcset="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x">
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_center jeg_nav_normal">
+								<div class="item_wrap jeg_nav_aligncenter"></div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_right jeg_nav_grow">
+								<div class="item_wrap jeg_nav_alignright">
+									<div class="jeg_nav_item jeg_ad jeg_ad_top jnews_header_ads">
+										<div class="ads-wrapper  "></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="jeg_bottombar jeg_navbar jeg_container jeg_navbar_wrapper jeg_navbar_normal jeg_navbar_normal">
+					<div class="container">
+						<div class="jeg_nav_row">
+							<div class="jeg_nav_col jeg_nav_left jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignleft">
+									<div class="jeg_nav_item jeg_nav_icon"> <a href="#"
+											class="toggle_btn jeg_mobile_toggle">
+											<span></span><span></span><span></span> </a></div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_center jeg_nav_normal">
+								<div class="item_wrap jeg_nav_aligncenter">
+									<div class="jeg_nav_item jeg_main_menu_wrapper">
+										<div class="jeg_mainmenu_wrap">
+											<ul class="jeg_menu jeg_main_menu jeg_menu_style_1"
+												data-animation="animate">
+												<li id="menu-item-126754"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126754 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="98" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/opiniao/">Opinião</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126755"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126755 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="8" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/politica/">Política</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-137940"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137940 bgnav"
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/coluna/">Coluna das Dez</a>
+												</li>
+												<li id="menu-item-126756"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126756 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="392" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/economia/">Economia</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126757"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-126757 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="39" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/brasil/">Brasil</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126758"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126758 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="37" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/pernambuco/">Pernambuco</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126760"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126760 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="36" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/esportes/">Esportes</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126761"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126761 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="50" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/cultura/">Cultura</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li id="menu-item-126763"
+													class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126763 bgnav jeg_megamenu category_1 ajaxload"
+													data-number="4" data-category="7" data-tags=""
+													data-item-row="default"><a
+														href="https://ricardoantunes.com.br/tecnologia/">Tecnologia</a>
+													<div class="sub-menu">
+														<div class="jeg_newsfeed clearfix">
+															<div class="newsfeed_overlay">
+																<div class="preloader_type preloader_circle">
+																	<div class="newsfeed_preloader jeg_preloader dot">
+																		<span></span><span></span><span></span></div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader circle">
+																		<div class="jnews_preloader_circle_outer">
+																			<div class="jnews_preloader_circle_inner">
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		class="newsfeed_preloader jeg_preloader square">
+																		<div class="jeg_square">
+																			<div class="jeg_square_inner"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_right jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignright">
+									<div class="jeg_nav_item jeg_search_wrapper search_icon jeg_search_popup_expand"> <a
+											href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+										<form action="https://ricardoantunes.com.br/" method="get"
+											class="jeg_search_form" target="_top"> <input name="s"
+												class="jeg_search_input" placeholder="Pesquisar..." type="text" value=""
+												autocomplete="off"> <button aria-label="Search Button" type="submit"
+												class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+										</form>
+										<div class="jeg_search_result jeg_search_hide with_result">
+											<div class="search-result-wrapper"></div>
+											<div class="search-link search-noresult"> Sem Resultados</div>
+											<div class="search-link search-all-button"> <i class="fa fa-search"></i> Ver
+												todos os resultados</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jeg_header_sticky">
+			<div class="sticky_blankspace"></div>
+			<div class="jeg_header normal">
+				<div class="jeg_container">
+					<div data-mode="scroll"
+						class="jeg_stickybar jeg_navbar jeg_navbar_wrapper jeg_navbar_normal jeg_navbar_normal">
+						<div class="container">
+							<div class="jeg_nav_row">
+								<div class="jeg_nav_col jeg_nav_left jeg_nav_grow">
+									<div class="item_wrap jeg_nav_alignleft">
+										<div class="jeg_nav_item jeg_main_menu_wrapper">
+											<div class="jeg_mainmenu_wrap">
+												<ul class="jeg_menu jeg_main_menu jeg_menu_style_1"
+													data-animation="animate">
+													<li id="menu-item-126754"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126754 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="98" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/opiniao/">Opinião</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126755"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126755 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="8" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/politica/">Política</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-137940"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137940 bgnav"
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/coluna/">Coluna das
+															Dez</a></li>
+													<li id="menu-item-126756"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126756 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="392" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/economia/">Economia</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126757"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-126757 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="39" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/brasil/">Brasil</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126758"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126758 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="37" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/pernambuco/">Pernambuco</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126760"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126760 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="36" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/esportes/">Esportes</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126761"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126761 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="50" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/cultura/">Cultura</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li id="menu-item-126763"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126763 bgnav jeg_megamenu category_1 ajaxload"
+														data-number="4" data-category="7" data-tags=""
+														data-item-row="default"><a
+															href="https://ricardoantunes.com.br/tecnologia/">Tecnologia</a>
+														<div class="sub-menu">
+															<div class="jeg_newsfeed clearfix">
+																<div class="newsfeed_overlay">
+																	<div class="preloader_type preloader_circle">
+																		<div
+																			class="newsfeed_preloader jeg_preloader dot">
+																			<span></span><span></span><span></span>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader circle">
+																			<div class="jnews_preloader_circle_outer">
+																				<div
+																					class="jnews_preloader_circle_inner">
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			class="newsfeed_preloader jeg_preloader square">
+																			<div class="jeg_square">
+																				<div class="jeg_square_inner"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="jeg_nav_col jeg_nav_center jeg_nav_normal">
+									<div class="item_wrap jeg_nav_aligncenter"></div>
+								</div>
+								<div class="jeg_nav_col jeg_nav_right jeg_nav_normal">
+									<div class="item_wrap jeg_nav_alignright">
+										<div
+											class="jeg_nav_item jeg_search_wrapper search_icon jeg_search_popup_expand">
+											<a href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+											<form action="https://ricardoantunes.com.br/" method="get"
+												class="jeg_search_form" target="_top"> <input name="s"
+													class="jeg_search_input" placeholder="Pesquisar..." type="text"
+													value="" autocomplete="off"> <button aria-label="Search Button"
+													type="submit" class="jeg_search_button btn"><i
+														class="fa fa-search"></i></button></form>
+											<div class="jeg_search_result jeg_search_hide with_result">
+												<div class="search-result-wrapper"></div>
+												<div class="search-link search-noresult"> Sem Resultados</div>
+												<div class="search-link search-all-button"> <i class="fa fa-search"></i>
+													Ver todos os resultados</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jeg_navbar_mobile_wrapper">
+			<div class="jeg_navbar_mobile" data-mode="scroll">
+				<div class="jeg_mobile_bottombar jeg_mobile_midbar jeg_container normal">
+					<div class="container">
+						<div class="jeg_nav_row">
+							<div class="jeg_nav_col jeg_nav_left jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignleft">
+									<div class="jeg_nav_item"> <a href="#" class="toggle_btn jeg_mobile_toggle"><i
+												class="fa fa-bars"></i></a></div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_center jeg_nav_grow">
+								<div class="item_wrap jeg_nav_aligncenter">
+									<div class="jeg_nav_item jeg_mobile_logo">
+										<div class="site-title"> <a href="https://ricardoantunes.com.br/"> <img
+													class="jeg_logo_img" src="images/Logo-300px-Ricardo-Antunes.png"
+													srcset="images/Logo-300px-Ricardo-Antunes.png 1x, images/Logo-300px-Ricardo-Antunes.png 2x"
+													alt="Blog do Ricardo Antunes"
+													data-light-src="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+													data-light-srcset="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x"
+													data-dark-src="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+													data-dark-srcset="https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunesblog.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x">
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="jeg_nav_col jeg_nav_right jeg_nav_normal">
+								<div class="item_wrap jeg_nav_alignright">
+									<div class="jeg_nav_item jeg_search_wrapper jeg_search_popup_expand"> <a href="#"
+											class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+										<form action="https://ricardoantunes.com.br/" method="get"
+											class="jeg_search_form" target="_top"> <input name="s"
+												class="jeg_search_input" placeholder="Pesquisar..." type="text" value=""
+												autocomplete="off"> <button aria-label="Search Button" type="submit"
+												class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+										</form>
+										<div class="jeg_search_result jeg_search_hide with_result">
+											<div class="search-result-wrapper"></div>
+											<div class="search-link search-noresult"> Sem Resultados</div>
+											<div class="search-link search-all-button"> <i class="fa fa-search"></i> Ver
+												todos os resultados</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jeg_navbar_mobile_menu">
+					<div class="container">
+						<div class="menu-main-menu-container">
+							<ul id="menu-main-menu" class="jeg_mobile_menu_style_1">
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126754">
+									<a href="https://ricardoantunes.com.br/opiniao/">Opinião</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126755">
+									<a href="https://ricardoantunes.com.br/politica/">Política</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137940">
+									<a href="https://ricardoantunes.com.br/coluna/">Coluna das Dez</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126756">
+									<a href="https://ricardoantunes.com.br/economia/">Economia</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-126757">
+									<a href="https://ricardoantunes.com.br/brasil/">Brasil</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126758">
+									<a href="https://ricardoantunes.com.br/pernambuco/">Pernambuco</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126760">
+									<a href="https://ricardoantunes.com.br/esportes/">Esportes</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126761">
+									<a href="https://ricardoantunes.com.br/cultura/">Cultura</a></li>
+								<li
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126763">
+									<a href="https://ricardoantunes.com.br/tecnologia/">Tecnologia</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sticky_blankspace" style="height: 60px;"></div>
+		</div>
+		<div class="jeg_ad jeg_ad_top jnews_header_bottom_ads">
+			<div class="ads-wrapper  "></div>
+		</div>
+		<div class="post-wrapper">
+			<div class="post-wrap">
+				<div class="jeg_main ">
+					<div class="jeg_container">
+						<div class="jeg_content jeg_singlepage">
+							<div class="container">
+								<div class="jeg_ad jeg_article jnews_article_top_ads">
+									<div class="ads-wrapper  "></div>
+								</div>
+								<div class="row">
+									<div class="jeg_main_content col-md-8">
+										<div class="jeg_inner_content">
+											<div class="jeg_breadcrumbs jeg_breadcrumb_container">
+												<div id="breadcrumbs"><span class=""> <a
+															href="https://ricardoantunes.com.br">Home</a> </span><i
+														class="fa fa-angle-right"></i><span class=""> <a
+															href="https://ricardoantunes.com.br/pernambuco/">Pernambuco</a>
+													</span><i class="fa fa-angle-right"></i><span
+														class="breadcrumb_last_link"> <a
+															href="https://ricardoantunes.com.br/pernambuco/caruaru/">Caruaru</a>
+													</span></div>
+											</div>
+											<div class="entry-header">
+												<h1 class="jeg_post_title">Ex-servidora denuncia demissões, assédio
+													moral e outras irregularidades na Prefeitura de Caruaru</h1>
+												<div class="jeg_meta_container">
+													<div class="jeg_post_meta jeg_post_meta_1">
+														<div class="meta_left">
+															<div class="jeg_meta_author"> <img alt="Danilo Duarte"
+																	src="https://secure.gravatar.com/avatar/48d0494902c803b7074a9f212f722804?s=80&amp;d=mm&amp;r=g"
+																	srcset="https://secure.gravatar.com/avatar/48d0494902c803b7074a9f212f722804?s=160&amp;d=mm&amp;r=g 2x"
+																	class="avatar avatar-80 photo" height="80"
+																	width="80" loading="lazy" decoding="async"> <span
+																	class="meta_text">Por</span> <a
+																	href="https://ricardoantunes.com.br/author/danilo-duarte/">Danilo
+																	Duarte</a></div>
+															<div class="jeg_meta_date"> <a
+																	href="https://ricardoantunes.com.br/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru/">23/09/2023
+																	- 08:00</a></div>
+														</div>
+														<div class="meta_right">
+															<div class="jeg_meta_zoom" data-in-step="3"
+																data-out-step="2">
+																<div class="zoom-dropdown">
+																	<div class="zoom-icon"> <span
+																			class="zoom-icon-small">A</span> <span
+																			class="zoom-icon-big">A</span></div>
+																	<div class="zoom-item-wrapper">
+																		<div class="zoom-item"> <button
+																				class="zoom-out"><span>A</span></button>
+																			<button
+																				class="zoom-in"><span>A</span></button>
+																			<div class="zoom-bar-container">
+																				<div class="zoom-bar"></div>
+																			</div> <button
+																				class="zoom-reset"><span>Reset</span></button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="jeg_featured featured_image "><a
+													href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/header-blog-assedio-moral-arraesecenteno.jpg">
+													<div class="thumbnail-container" style="padding-bottom:50%"><img
+															width="750" height="375"
+															src="images/header-blog-assedio-moral-arraesecenteno-750x375.jpg"
+															class=" wp-post-image"
+															alt="Ex-servidora diz que testemunhou " muitos="" abusos"=""
+															na="" prefeitura="" de="" caruaru"="" decoding="async"
+															fetchpriority="high"></div>
+													<p class="wp-caption-text">Ex-servidora diz que testemunhou "muitos
+														abusos" na Prefeitura de Caruaru</p>
+												</a></div>
+											<div class="jeg_share_top_container">
+												<div class="jeg_share_button clearfix">
+													<div class="jeg_share_stats"></div>
+													<div class="jeg_sharelist"> <a
+															href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+															rel="nofollow" class="jeg_btn-facebook expanded"><i
+																class="fa fa-facebook-official"></i><span>Compartilhar</span></a><a
+															href="https://twitter.com/intent/tweet?text=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+															rel="nofollow" class="jeg_btn-twitter expanded"><i
+																class="fa fa-twitter"><svg
+																	xmlns="http://www.w3.org/2000/svg" height="1em"
+																	viewBox="0 0 512 512">
+																	<path
+																		d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+																	</path>
+																</svg></i><span>Tweetar</span></a><a
+															href="//api.whatsapp.com/send?text=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru%0Ahttps%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+															rel="nofollow" data-action="share/whatsapp/share"
+															class="jeg_btn-whatsapp "><i
+																class="fa fa-whatsapp"></i></a><a
+															href="https://telegram.me/share/url?url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F&amp;text=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru"
+															rel="nofollow" class="jeg_btn-telegram "><i
+																class="fa fa-telegram"></i></a><a
+															href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F&amp;title=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru"
+															rel="nofollow" class="jeg_btn-linkedin "><i
+																class="fa fa-linkedin"></i></a><a
+															href="https://www.pinterest.com/pin/create/bookmarklet/?pinFave=1&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F&amp;media=https://ricardoantunes.com.br/wp-content/uploads/2023/09/header-blog-assedio-moral-arraesecenteno.jpg&amp;description=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru"
+															rel="nofollow" class="jeg_btn-pinterest "><i
+																class="fa fa-pinterest"></i></a><a
+															href="https://chart.googleapis.com/chart?chs=400x400&amp;cht=qr&amp;choe=UTF-8&amp;chl=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+															rel="nofollow" class="jeg_btn-qrcode "><i
+																class="fa fa-qrcode"></i></a><a
+															href="mailto:?subject=Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru&amp;body=https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+															rel="nofollow" class="jeg_btn-email "><i
+																class="fa fa-envelope"></i></a></div>
+												</div>
+											</div>
+											<div class="jeg_ad jeg_article jnews_content_top_ads ">
+												<div class="ads-wrapper  "></div>
+											</div>
+											<div class="entry-content no-share">
+												<div
+													class="jeg_share_button share-float jeg_sticky_share clearfix share-monocrhome">
+													<div class="jeg_share_float_container"></div>
+												</div>
+												<div class="content-inner ">
+													<script type="text/javascript" src="js/tiny-slider.js"
+														id="tiny-slider-js"></script>
+													<script type="text/javascript" src="js/tiny-slider-noconflict.js"
+														id="tiny-slider-noconflict-js"></script>
+													<script type="text/javascript" src="js/jquery.previewslider.js"
+														id="jnews-previewslider-js"></script>
+													<p><b>EXCLUSIVO,�&nbsp;</b><b>Por Danilo Duarte – </b>Uma
+														ex-servidora do Município de Caruaru, que não quis se
+														identificar, temendo represálias, entrou em contato conosco para
+														denunciar suposto assédio moral e outros abusos da Prefeitura
+														contra alguns servidores municipais. Segundo informou, nos
+														últimos dias, alguns funcionários foram pegos de surpresa com o
+														fim do contrato com o órgão público.</p>
+													<p>A ex-servidora nos encaminhou alguns prints de conversas em
+														grupos de mensagem com outros servidores da saúde e da educação.
+													</p>
+													<h3>Confira:</h3>
+													<div style="display:none" class="jeg_preview_slider gallery_1"
+														data-selector="gallery_1">
+														<div class="jeg_preview_holder">
+															<div class="jeg_preview_media">
+																<div class="jeg_preview_media_holder">
+																	<h3>�&nbsp;</h3>
+																	<div class="fullscreen-switch"> <i class="fa"></i>
+																	</div>
+																	<div class="jeg_preview_media_content">
+																		<div
+																			class="jeg_preview_media_content_holder_padding">
+																			<div
+																				class="jeg_preview_media_content_holder">
+																			</div>
+																		</div>
+																		<div
+																			class="jeg_preview_media_content_navigation">
+																			<div class="prev"> <i class="fa"></i></div>
+																			<div class="next"> <i class="fa"></i></div>
+																		</div>
+																		<div class="preview-slider-overlay">
+																			<div class="preloader_type preloader_dot">
+																				<div
+																					class="module-preloader jeg_preloader dot">
+																					<span></span><span></span><span></span>
+																				</div>
+																				<div
+																					class="module-preloader jeg_preloader circle">
+																					<div
+																						class="jnews_preloader_circle_outer">
+																						<div
+																							class="jnews_preloader_circle_inner">
+																						</div>
+																					</div>
+																				</div>
+																				<div
+																					class="module-preloader jeg_preloader square">
+																					<div class="jeg_square">
+																						<div class="jeg_square_inner">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="jeg_preview_control">
+																		<div class="left_control">
+																			<div class="counter"><span
+																					class="current">1</span> de 6</div>
+																			<div class="subtitle"></div>
+																		</div>
+																		<div class="zoom"> <span class="reduce">-</span>
+																			<span class="increase">+</span></div>
+																	</div>
+																</div>
+															</div>
+															<div class="jeg_preview_bottom_slider"> <a data-id="0"
+																	data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/A.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/A.jpg"
+																	class="jeg_preview_item active">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/A-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/A-120x86.jpg 120w, images/A-350x250.jpg 350w, images/A-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="1" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/B.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/B.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/B-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/B-120x86.jpg 120w, images/B-350x250.jpg 350w, images/B-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="2" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/C.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/C.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/C-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/C-120x86.jpg 120w, images/C-350x250.jpg 350w, images/C-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="3" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/D.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/D.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/D-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/D-120x86.jpg 120w, images/D-350x250.jpg 350w, images/D-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="4" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/E.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/E.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/E-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/E-120x86.jpg 120w, images/E-350x250.jpg 350w, images/E-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="5" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/F.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/F.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/F-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/F-120x86.jpg 120w, images/F-350x250.jpg 350w, images/F-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a></div>
+														</div>
+														<div class="jeg_preview_description">
+															<div class="jeg_preview_slider_ads">
+																<div class="ads-wrapper"></div>
+															</div>
+															<div class="jeg_preview_description_wrapper">
+																<div class="jeg_hidden_preview_description">
+																	<h3>1.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>2.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>3.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>4.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>5.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>6.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+															</div>
+														</div>
+														<script>var gallery_1 = {
+																rtl: false,
+																native_zoom: true,
+																zoom_max: 5,
+																zoom_step: 40,
+																image_sequence: []
+															};</script>
+													</div>
+													<p>Tem também conversas com uma funcionária da Secretaria de
+														Administração (SAD), que tentou justificar as demissões como
+														estratégia de contingenciamento e convocação de efetivos.</p>
+													<h3>Veja as mensagens:</h3>
+													<div style="display:none" class="jeg_preview_slider gallery_2"
+														data-selector="gallery_2">
+														<div class="jeg_preview_holder">
+															<div class="jeg_preview_media">
+																<div class="jeg_preview_media_holder">
+																	<h3>�&nbsp;</h3>
+																	<div class="fullscreen-switch"> <i class="fa"></i>
+																	</div>
+																	<div class="jeg_preview_media_content">
+																		<div
+																			class="jeg_preview_media_content_holder_padding">
+																			<div
+																				class="jeg_preview_media_content_holder">
+																			</div>
+																		</div>
+																		<div
+																			class="jeg_preview_media_content_navigation">
+																			<div class="prev"> <i class="fa"></i></div>
+																			<div class="next"> <i class="fa"></i></div>
+																		</div>
+																		<div class="preview-slider-overlay">
+																			<div class="preloader_type preloader_dot">
+																				<div
+																					class="module-preloader jeg_preloader dot">
+																					<span></span><span></span><span></span>
+																				</div>
+																				<div
+																					class="module-preloader jeg_preloader circle">
+																					<div
+																						class="jnews_preloader_circle_outer">
+																						<div
+																							class="jnews_preloader_circle_inner">
+																						</div>
+																					</div>
+																				</div>
+																				<div
+																					class="module-preloader jeg_preloader square">
+																					<div class="jeg_square">
+																						<div class="jeg_square_inner">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="jeg_preview_control">
+																		<div class="left_control">
+																			<div class="counter"><span
+																					class="current">1</span> de 7</div>
+																			<div class="subtitle"></div>
+																		</div>
+																		<div class="zoom"> <span class="reduce">-</span>
+																			<span class="increase">+</span></div>
+																	</div>
+																</div>
+															</div>
+															<div class="jeg_preview_bottom_slider"> <a data-id="0"
+																	data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/1.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/1.jpg"
+																	class="jeg_preview_item active">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/1-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/1-120x86.jpg 120w, images/1-350x250.jpg 350w, images/1-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="1" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/2-2.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/2-2.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/2-2-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/2-2-120x86.jpg 120w, images/2-2-350x250.jpg 350w, images/2-2-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="2" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/3-2.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/3-2.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/3-2-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/3-2-120x86.jpg 120w, images/3-2-350x250.jpg 350w, images/3-2-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="3" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/4-3.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/4-3.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/4-3-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/4-3-120x86.jpg 120w, images/4-3-350x250.jpg 350w, images/4-3-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="4" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/6.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/6.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/6-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/6-120x86.jpg 120w, images/6-350x250.jpg 350w, images/6-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="5" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/7-2.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/7-2.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/7-2-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/7-2-120x86.jpg 120w, images/7-2-350x250.jpg 350w, images/7-2-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a><a data-id="6" data-title=""
+																	data-image="https://ricardoantunes.com.br/wp-content/uploads/2023/09/8.jpg"
+																	href="https://ricardoantunes.com.br/wp-content/uploads/2023/09/8.jpg"
+																	class="jeg_preview_item ">
+																	<div class="jeg_preview_item_thumbnail"> <img
+																			width="120" height="86"
+																			src="images/8-120x86.jpg"
+																			class="attachment-jnews-120x86 size-jnews-120x86"
+																			alt="" decoding="async" loading="lazy"
+																			srcset="images/8-120x86.jpg 120w, images/8-350x250.jpg 350w, images/8-750x536.jpg 750w"
+																			sizes="(max-width: 120px) 100vw, 120px">
+																	</div>
+																</a></div>
+														</div>
+														<div class="jeg_preview_description">
+															<div class="jeg_preview_slider_ads">
+																<div class="ads-wrapper"></div>
+															</div>
+															<div class="jeg_preview_description_wrapper">
+																<div class="jeg_hidden_preview_description">
+																	<h3>1.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>2.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>3.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>4.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>5.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>6.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+																<div class="jeg_hidden_preview_description">
+																	<h3>7.</h3>
+																	<div class="jeg_preview_description_content"></div>
+																</div>
+															</div>
+														</div>
+														<script>var gallery_2 = {
+																rtl: false,
+																native_zoom: true,
+																zoom_max: 5,
+																zoom_step: 40,
+																image_sequence: []
+															};</script>
+													</div>
+													<p>Porém, segundo apuramos, não houve até o momento nenhuma
+														publicação no Diário Oficial do Município sobre convocação de
+														novos efetivos para as secretarias citadas.</p>
+													<p>“Onde eu trabalhei, foram demitidos eu e mais sete. O gestor
+														falou que foi por falta de fundo municipal, que a cidade está em
+														emergência reduzindo o quadro de funcionários, desligando e
+														talvez recontrate ano que vem as mesmas pessoas, o que é
+														mentira, porque o RH nunca fez isso. Na segunda-feira o prefeito
+														disse que era por causa do fundo municipal. A chefe de gabinete
+														diz que é pelo contingenciamento. Muitos demitidos, a deriva, de
+														mãos abanando sem direito a nada. E nada de anúncio oficial de
+														prefeitura”, questionou.</p>
+													<p>A ex-servidora relatou que nos quatro anos que serviu ao
+														Município testemunhou muitos abusos dentro da Prefeitura de
+														Caruaru.</p>
+													<p>“Eu fiquei quatro anos, e o que vi foi muito assédio moral de
+														gestores e gerentes com equipes, prefeito fazendo vista grossa e
+														nomeando muitas pessoas que não têm capacidade para o cargo,
+														irregularidades em contrato de transportes de alunos, muita
+														coisa. Quem está dentro sabe, as demissões vêm do gabinete, que
+														passa para o RH, que passa para escolas e/ou centros de saúde.
+														Gabinete mexendo peças. E quem saiu, entrou por seleção como eu.
+														Não foi ‘QI’ ou ‘arrumadinho’. Isso é fato”, denunciou.</p>
+													<p>Outra denúncia grave é direcionada a atual chefe de gabinete da
+														SAD, Kátia Torres. Segundo a ex-servidora, “Essa mesma Katia foi
+														a responsável por escolher quem ia receber o rateio de 2021 na
+														educação. Pessoas que nem trabalhavam em escola receberam, e
+														quem estava não recebeu. Ela decidia por critério dela, ignorava
+														o que estava no decreto na época”.</p>
+													<p>Há denúncias de assédio moral também. A ex-servidora relata um
+														episódio que aconteceu em 2021, quando estava lotada na
+														secretaria de educação, onde Kátia exercia a função de gerente
+														do RH na época. Segundo conta, com o falecimento do seu avô, que
+														residia em São Paulo, a ex-servidora pediu afastamento para
+														acompanhar o enterro do familiar, mas o direito foi negado.</p>
+													<p>“Quando há falecimento de alguém da família de um servidor, ele
+														tem direito a um afastamento de dois ou três dias. Eu falei a
+														minha gestora escolar na época. Ela foi contra, mas foi falar
+														com Katia sobre, para liberar. Nem que adiantasse minhas férias,
+														pois eu sofri muito. Nem a gestora escolar e nem Katia deram os
+														dias. Não pude ir ao enterro do meu avô. E mesmo no dia em que
+														ele faleceu e eu fiquei arrasada, continuavam a me cobrar
+														trabalho via WhatsApp e ligações. Todos estavam cientes, mas
+														ninguém me deu o direito, enquanto que minha gestora ficou um
+														mês afastada após a morte da irmã dela”, desabafou.</p>
+													<h3>Ouça os áudios:</h3>
+													<div class="jeg_video_container jeg_video_content"><iframe
+															title="Ex-servidora denuncia demissões, assédio moral e outras irregularidades na Prefeitura de Caruaru"
+															width="500" height="281"
+															src="https://www.youtube.com/embed/cs4UGELaE_Q?feature=oembed"
+															frameborder="0"
+															allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+															allowfullscreen=""></iframe></div>
+													<p>Sobre as demissões, a fonte afirma que a Prefeitura teria mandado
+														listas em branco para os gestores de escolas com a quantidade de
+														demissões por unidade, sendo os próprios gestores os
+														responsáveis por incluir os nomes nas listas. “Demitiram até
+														quem estava de licença médica. E teve quebra de contrato com
+														todos os funcionários, pois tínhamos contrato até dezembro. Teve
+														lista que apareceu depois das primeiras demissões, onde quem
+														definia era o gabinete. Agora é o gestor de escola que, com
+														certeza, vai por os dele no nosso lugar”.</p>
+													<p>Houve demissões e nomeações também na Fundação de Cultura, onde
+														interino assumiu no lugar do ex-presidente. A mudança foi
+														publicada no Diário Oficial do Município, na última
+														segunda-feira (18).</p>
+													<h3>Confira:</h3>
+													<figure id="attachment_145707"
+														aria-describedby="caption-attachment-145707"
+														style="width: 1000px" class="wp-caption aligncenter"><img
+															decoding="async" class="size-full wp-image-145707"
+															src="images/WhatsApp-Image-2023-09-22-at-14.18.47.jpg"
+															alt="" width="1000" height="1350"
+															srcset="images/WhatsApp-Image-2023-09-22-at-14.18.47.jpg 1000w, images/WhatsApp-Image-2023-09-22-at-14.18.47-222x300.jpg 222w, images/WhatsApp-Image-2023-09-22-at-14.18.47-759x1024.jpg 759w, images/WhatsApp-Image-2023-09-22-at-14.18.47-768x1037.jpg 768w, images/WhatsApp-Image-2023-09-22-at-14.18.47-750x1013.jpg 750w"
+															sizes="(max-width: 1000px) 100vw, 1000px">
+														<figcaption id="caption-attachment-145707"
+															class="wp-caption-text">Diário Oficial de Caruaru publicou
+															exoneração na Fundação Cultural</figcaption>
+													</figure>
+													<h3>O Outro Lado</h3>
+													<p>Entramos em contato com a chefe de gabinete da SAD, Kátia Torres.
+														Sobre as acusações de que seria ela a responsável por definir
+														quem receberia o rateio da Educação, Kátia confirmou que
+														trabalhou na Secretaria de Educação de Caruaru, no setor de
+														Recursos Humanos, mas negou que era ela quem definia o rateio.
+														Sobre as demais acusações, a chefe de gabinete disse que está
+														“analisando o teor da denúncia”, e que irá se manifestar
+														posteriormente.</p>
+													<p>A Assessoria de Comunicação da Prefeitura de Caruaru não atendeu
+														�&nbsp;s nossas ligações. �&nbsp;Então enviamos a reclamação
+														para a ouvidoria do Município, mas até o fechamento desta
+														matéria, não tivemos retorno.</p>
+													<div class="jeg_post_tags"><span>Tags:</span> <a
+															href="https://ricardoantunes.com.br/tag/caruaru/"
+															rel="tag">caruaru</a><a
+															href="https://ricardoantunes.com.br/tag/denuncia/"
+															rel="tag">Denuncia</a><a
+															href="https://ricardoantunes.com.br/tag/prefeitura/"
+															rel="tag">Prefeitura</a><a
+															href="https://ricardoantunes.com.br/tag/prefeitura-de-caruaru/"
+															rel="tag">Prefeitura de Caruaru</a></div>
+												</div>
+											</div>
+											<div class="jeg_share_bottom_container"></div>
+											<div class="jeg_push_notification single_post"></div>
+											<div class="jeg_ad jeg_article jnews_content_bottom_ads ">
+												<div class="ads-wrapper  ">
+													<div class="ads_shortcode">
+														<div data-elementor-type="section" data-elementor-id="137922"
+															class="elementor elementor-137922"
+															data-elementor-post-type="elementor_library">
+															<section
+																class="elementor-section elementor-top-section elementor-element elementor-element-c48c6d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+																data-id="c48c6d6" data-element_type="section"
+																data-settings="{" background_background":"classic"}"="">
+																<div
+																	class="elementor-container elementor-column-gap-default">
+																	<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-514d451"
+																		data-id="514d451" data-element_type="column"
+																		data-settings="{"
+																		background_background":"classic"}"="">
+																		<div
+																			class="elementor-widget-wrap elementor-element-populated">
+																			<div class="elementor-element elementor-element-cd98a38 elementor-widget elementor-widget-heading"
+																				data-id="cd98a38"
+																				data-element_type="widget"
+																				data-widget_type="heading.default">
+																				<div class="elementor-widget-container">
+																					<h2
+																						class="elementor-heading-title elementor-size-default">
+																						FALE COM A GENTE:</h2>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-b5d63c0 elementor-widget elementor-widget-text-editor"
+																				data-id="b5d63c0"
+																				data-element_type="widget"
+																				data-widget_type="text-editor.default">
+																				<div class="elementor-widget-container">
+																					<p style="text-align: center;">Tem
+																						uma boa história? Manda um
+																						´ZAP´, que a gente investiga. O
+																						sigilo da fonte é garantido pela
+																						Constituição.</p>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-949eb7d elementor-align-center elementor-widget elementor-widget-button"
+																				data-id="949eb7d"
+																				data-element_type="widget"
+																				data-widget_type="button.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-button-wrapper">
+																						<a class="elementor-button elementor-button-link elementor-size-sm"
+																							href="https://web.whatsapp.com/send?phone=5581997317348&amp;text=Ol%C3%A1%2C%20que%20bom%20que%20voc%C3%AA%20est%C3%A1%20por%20aqui.%20Como%20podemos%20te%20ajudar%3F">
+																							<span
+																								class="elementor-button-content-wrapper">
+																								<span
+																									class="elementor-button-text">CLIQUE
+																									AQUI PARA
+																									ENVIAR</span>
+																							</span> </a></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="jnews_prev_next_container"></div>
+											<div class="jnews_author_box_container "></div>
+											<div class="jnews_related_post_container">
+												<div class="jeg_postblock_9 jeg_postblock jeg_module_hook jeg_pagination_disable jeg_col_2o3 jnews_module_145698_0_650f4bd369af5   "
+													data-unique="jnews_module_145698_0_650f4bd369af5">
+													<div class="jeg_block_heading jeg_block_heading_8 jeg_subcat_right">
+														<h3 class="jeg_block_title"><span>Veja
+																também<strong>Artigos</strong></span></h3>
+													</div>
+													<div class="jeg_block_container">
+														<div class="jeg_posts_wrap">
+															<div class="jeg_posts jeg_load_more_flag">
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/pf-realiza-operacao-de-combate-ao-contrabando-de-cigarros-em-pernambuco/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/WhatsApp-Image-2023-09-13-at-09.42.39-360x180.jpeg"
+																					class=" wp-post-image" alt=""
+																					decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/pernambuco/"
+																					class="category-pernambuco">Pernambuco</a></span>
+																		</div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/pf-realiza-operacao-de-combate-ao-contrabando-de-cigarros-em-pernambuco/">PF
+																				realiza operação de combate ao
+																				contrabando de cigarros em
+																				Pernambuco</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/apos-denuncia-sobre-festa-em-fernando-de-noronha-empresario-carioca-da-sua-versao-dos-fatos/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/WhatsApp-Image-2023-09-12-at-11.17.44-360x180.jpeg"
+																					class=" wp-post-image"
+																					alt="Sidney Souza se diz amante de Fernando de Noranha e já visitou a ilha mais de 30 vezes"
+																					decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/pernambuco/fernando-de-noronha/"
+																					class="category-fernando-de-noronha">Fernando
+																					de Noronha</a></span></div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/apos-denuncia-sobre-festa-em-fernando-de-noronha-empresario-carioca-da-sua-versao-dos-fatos/">Após
+																				denúncia sobre festa em Fernando de
+																				Noronha, empresário carioca dá sua
+																				versão dos fatos</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/apontado-como-socio-de-noe-magalhaes-tem-contratos-milionarios-com-o-governo-do-estado-e-dezenas-de-prefeituras/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/WhatsApp-Image-2023-09-08-at-1.18.07-PM-360x180.jpeg"
+																					class=" wp-post-image"
+																					alt="Empresa de manutenção de veículos é a "
+																					ponta="" do="" iceberg"="" em=""
+																					esquema"="" decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/politica/"
+																					class="category-politica">Política</a></span>
+																		</div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/apontado-como-socio-de-noe-magalhaes-tem-contratos-milionarios-com-o-governo-do-estado-e-dezenas-de-prefeituras/">Sócio
+																				de Noé tem contratos milionários com o
+																				Governo de PE e dezenas de
+																				prefeituras</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/desastre-da-gestao-thallyta-figueroa-gera-insatisfacao-entre-moradores-de-noronha/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/WhatsApp-Image-2023-08-31-at-12.22.50-360x180.jpeg"
+																					class=" wp-post-image" alt=""
+																					decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/brasil/"
+																					class="category-brasil">Brasil</a></span>
+																		</div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/desastre-da-gestao-thallyta-figueroa-gera-insatisfacao-entre-moradores-de-noronha/">Desastre
+																				da gestão Thallyta Figuerôa gera
+																				insatisfação entre moradores de
+																				Noronha</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/protetores-de-animais-denunciam-interesse-eleitoral-em-projeto-da-pcr/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/site_09-2-360x180.jpg"
+																					class=" wp-post-image"
+																					alt="Vereadora Andreza Romero e Deputado Estadual Romero Albuquerque"
+																					decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/politica/"
+																					class="category-politica">Política</a></span>
+																		</div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/protetores-de-animais-denunciam-interesse-eleitoral-em-projeto-da-pcr/">Protetores
+																				de animais denunciam interesse eleitoral
+																				em projeto da PCR</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+																<article class="jeg_post jeg_pl_md_1 format-standard">
+																	<div class="jeg_thumb"> <a
+																			href="https://ricardoantunes.com.br/fernando-rodolfo-critica-rodrigo-pinheiro-por-nao-trabalhar-para-incluir-obras-para-caruaru-no-novo-pac/">
+																			<div class="thumbnail-container  size-500 ">
+																				<img width="360" height="180"
+																					src="images/98adu8ahd8adguaysd-360x180.jpg"
+																					class=" wp-post-image"
+																					alt="Deputado federal critica desempenho do prefeito de Caruaru em programa do Governo Federal."
+																					decoding="async"></div>
+																		</a>
+																		<div class="jeg_post_category"> <span><a
+																					href="https://ricardoantunes.com.br/pernambuco/caruaru/"
+																					class="category-caruaru">Caruaru</a></span>
+																		</div>
+																	</div>
+																	<div class="jeg_postblock_content">
+																		<h3 class="jeg_post_title"> <a
+																				href="https://ricardoantunes.com.br/fernando-rodolfo-critica-rodrigo-pinheiro-por-nao-trabalhar-para-incluir-obras-para-caruaru-no-novo-pac/">Fernando
+																				Rodolfo critica Rodrigo Pinheiro por não
+																				trabalhar para incluir obras para
+																				Caruaru no Novo PAC</a></h3>
+																		<div class="jeg_post_meta"></div>
+																	</div>
+																</article>
+															</div>
+														</div>
+														<div class="module-overlay">
+															<div class="preloader_type preloader_dot">
+																<div class="module-preloader jeg_preloader dot">
+																	<span></span><span></span><span></span></div>
+																<div class="module-preloader jeg_preloader circle">
+																	<div class="jnews_preloader_circle_outer">
+																		<div class="jnews_preloader_circle_inner"></div>
+																	</div>
+																</div>
+																<div class="module-preloader jeg_preloader square">
+																	<div class="jeg_square">
+																		<div class="jeg_square_inner"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="jeg_block_navigation">
+														<div class="navigation_overlay">
+															<div class="module-preloader jeg_preloader">
+																<span></span><span></span><span></span></div>
+														</div>
+													</div>
+													<script>var jnews_module_145698_0_650f4bd369af5 = { "header_icon": "", "first_title": "Veja tamb\u00e9m", "second_title": "Artigos", "url": "", "header_type": "heading_8", "header_background": "", "header_secondary_background": "", "header_text_color": "", "header_line_color": "", "header_accent_color": "", "header_filter_category": "", "header_filter_author": "", "header_filter_tag": "", "header_filter_text": "All", "post_type": "post", "content_type": "all", "sponsor": false, "number_post": "6", "post_offset": 0, "unique_content": "disable", "include_post": "", "included_only": false, "exclude_post": 145698, "include_category": "", "exclude_category": "", "include_author": "", "include_tag": "409,124,586,14504", "exclude_tag": "", "sort_by": "latest", "date_format": "custom", "date_format_custom": "d\/m\/Y - H:i", "force_normal_image_load": "", "pagination_mode": "disable", "pagination_nextprev_showtext": "", "pagination_number_post": "6", "pagination_scroll_limit": 3, "boxed": "", "boxed_shadow": "", "el_id": "", "el_class": "", "scheme": "", "column_width": "auto", "title_color": "", "accent_color": "", "alt_color": "", "excerpt_color": "", "css": "", "excerpt_length": 20, "paged": 1, "column_class": "jeg_col_2o3", "class": "jnews_block_9" };</script>
+												</div>
+											</div>
+											<div class="jnews_popup_post_container">
+												<section class="jeg_popup_post"> <span class="caption">Próximo
+														Artigo</span>
+													<div class="jeg_popup_content">
+														<div class="jeg_thumb"> <a
+																href="https://ricardoantunes.com.br/tse-forma-maioria-para-manter-bolsonaro-inelegivel/">
+																<div class="thumbnail-container  size-1000 "><img
+																		width="75" height="75"
+																		src="images/Jair-Bolsonaro--75x75.jpeg"
+																		class=" wp-post-image"
+																		alt="Acompanharam o voto do relator contra o recurso a ministra Cármen Lúcia e os ministros André Ramos Tavares e a Alexandre de Moraes. Foto-Reprodução"
+																		decoding="async"></div>
+															</a></div>
+														<h3 class="post-title"> <a
+																href="https://ricardoantunes.com.br/tse-forma-maioria-para-manter-bolsonaro-inelegivel/">
+																TSE forma maioria para manter Bolsonaro inelegível </a>
+														</h3>
+													</div> <a href="#" class="jeg_popup_close"><i
+															class="fa fa-close"></i></a>
+												</section>
+											</div>
+											<div class="jnews_comment_container">
+												<div id="comments" class="comment-wrapper section"><span
+														class="comment-login"><a
+															href="https://ricardoantunes.com.br/wp-login.php?redirect_to=https%3A%2F%2Fricardoantunes.com.br%2F"
+															class="">Por favor, faça login para comentar</a> </span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="jeg_sidebar  jeg_sticky_sidebar col-md-4">
+										<div class="jegStickyHolder">
+											<div class="theiaStickySidebar">
+												<div class="widget widget_media_image" id="media_image-14">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd37222f">
+														<h3 class="jeg_block_title"><span>Governo PE</span></h3>
+													</div><a
+														href="https://www.instagram.com/educacaopeoficial/?igshid=MmU2YjMzNjRlOQ%3D%3D"><img
+															width="300" height="300"
+															src="images/GOVPPA-OPM-banners-300x300-1.png"
+															class="image wp-image-142772  attachment-full size-full"
+															alt="" decoding="async"
+															style="max-width: 100%; height: auto;" loading="lazy"
+															srcset="images/GOVPPA-OPM-banners-300x300-1.png 300w, images/GOVPPA-OPM-banners-300x300-1-150x150.png 150w, images/GOVPPA-OPM-banners-300x300-1-75x75.png 75w"
+															sizes="(max-width: 300px) 100vw, 300px"></a>
+												</div>
+												<div class="widget widget_media_image" id="media_image-11">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd372807">
+														<h3 class="jeg_block_title"><span>Cabo de Santo Agostinho</span>
+														</h3>
+													</div><a href="https://www.cabo.pe.gov.br/"><img width="300"
+															height="300" src="images/RICARDO-ANTUNES_300x300px.gif"
+															class="image wp-image-141853  attachment-full size-full"
+															alt="" decoding="async"
+															style="max-width: 100%; height: auto;" loading="lazy"></a>
+												</div>
+												<div class="widget widget_text" id="text-3">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd372ca8">
+														<h3 class="jeg_block_title"><a
+																href="https://www.camaragibe.pe.gov.br/"><span>Camaragibe</span></a>
+														</h3>
+													</div>
+													<div class="textwidget">
+														<p><a href="https://www.camaragibe.pe.gov.br/"><img
+																	decoding="async" loading="lazy"
+																	class="alignnone size-medium wp-image-134879"
+																	src="images/300x300_RICARDOANTUNES-1-300x300.gif"
+																	alt="" width="300" height="300"
+																	srcset="images/300x300_RICARDOANTUNES-1-300x300.gif 300w, images/300x300_RICARDOANTUNES-1-150x150.gif 150w, images/300x300_RICARDOANTUNES-1-75x75.gif 75w, images/300x300_RICARDOANTUNES-1-350x350.gif 350w"
+																	sizes="(max-width: 300px) 100vw, 300px"></a></p>
+													</div>
+												</div>
+												<div class="widget widget_text" id="text-2">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd3730be">
+														<h3 class="jeg_block_title"><span>Garanhuns</span></h3>
+													</div>
+													<div class="textwidget">
+														<p><a href="https://garanhuns.pe.gov.br/"><img decoding="async"
+																	loading="lazy"
+																	class="alignnone size-full wp-image-133895"
+																	src="images/Banner-300x300px-256c.gif" alt=""
+																	width="300" height="300"></a></p>
+													</div>
+												</div>
+												<div class="widget widget_media_image" id="media_image-16">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd3733ca">
+														<h3 class="jeg_block_title"><span>Ipojuca</span></h3>
+													</div><a href="https://www.ipojuca.pe.gov.br/"><img width="300"
+															height="300"
+															src="images/PMI-Novas-Ambulancias-Banners-Internet-300x300-Ricardo-Antunes-Estatico.png"
+															class="image wp-image-144159  attachment-full size-full"
+															alt="" decoding="async"
+															style="max-width: 100%; height: auto;" loading="lazy"
+															srcset="images/PMI-Novas-Ambulancias-Banners-Internet-300x300-Ricardo-Antunes-Estatico.png 300w, images/PMI-Novas-Ambulancias-Banners-Internet-300x300-Ricardo-Antunes-Estatico-150x150.png 150w, images/PMI-Novas-Ambulancias-Banners-Internet-300x300-Ricardo-Antunes-Estatico-75x75.png 75w"
+															sizes="(max-width: 300px) 100vw, 300px"></a>
+												</div>
+												<div class="widget widget_media_image" id="media_image-7">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd3738a1">
+														<h3 class="jeg_block_title"><span>São Lourenço da Mata</span>
+														</h3>
+													</div><a href="https://saolourencodamata.pe.gov.br/"><img
+															width="300" height="300"
+															src="images/IMP-0095_23-CP-BANNER-BLOG-SETEMBRO-SLM-300X300.jpg"
+															class="image wp-image-144304  attachment-full size-full"
+															alt="" decoding="async"
+															style="max-width: 100%; height: auto;" loading="lazy"
+															srcset="images/IMP-0095_23-CP-BANNER-BLOG-SETEMBRO-SLM-300X300.jpg 300w, images/IMP-0095_23-CP-BANNER-BLOG-SETEMBRO-SLM-300X300-150x150.jpg 150w, images/IMP-0095_23-CP-BANNER-BLOG-SETEMBRO-SLM-300X300-75x75.jpg 75w"
+															sizes="(max-width: 300px) 100vw, 300px"></a>
+												</div>
+												<div class="widget widget_media_image" id="media_image-15">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd373d77">
+														<h3 class="jeg_block_title"><span>Vitória de Santo Antão</span>
+														</h3>
+													</div><img width="300" height="300"
+														src="images/BannerWeb-CEAMI-RICARDO_ANTUNES-300X300.png"
+														class="image wp-image-142304  attachment-full size-full" alt=""
+														decoding="async" style="max-width: 100%; height: auto;"
+														loading="lazy"
+														srcset="images/BannerWeb-CEAMI-RICARDO_ANTUNES-300X300.png 300w, images/BannerWeb-CEAMI-RICARDO_ANTUNES-300X300-150x150.png 150w, images/BannerWeb-CEAMI-RICARDO_ANTUNES-300X300-75x75.png 75w"
+														sizes="(max-width: 300px) 100vw, 300px">
+												</div>
+												<div class="widget  jeg_pb_boxed widget_jnews_popular"
+													id="jnews_popular-2">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_module_145698_0_650f4bd374302">
+														<h3 class="jeg_block_title"><span>Mais Lidas</span></h3>
+													</div>
+													<ul class="popularpost_list">
+														<li class="popularpost_item format-standard">
+															<div class="jeg_thumb"> <a
+																	href="https://ricardoantunes.com.br/diario-de-pe-demite-mais-5-e-persegue-jailson-da-paz-e-osnaldo-morais/">
+																	<div class="thumbnail-container  size-715 "><img
+																			width="350" height="250"
+																			src="images/1695170079235756-350x250.jpg"
+																			class=" wp-post-image"
+																			alt="Nesta segunda-feira (19), tiveram mais demissões no diário; imagem/reprodução"
+																			decoding="async"></div>
+																</a></div>
+															<h3 class="jeg_post_title"> <a
+																	href="https://ricardoantunes.com.br/diario-de-pe-demite-mais-5-e-persegue-jailson-da-paz-e-osnaldo-morais/"
+																	data-num="01">Diário de PE demite mais 5 e persegue
+																	Jailson da Paz e Osnaldo Morais</a></h3>
+															<div class="popularpost_meta">
+																<div class="jeg_socialshare"> <span
+																		class="share_count"><i
+																			class="fa fa-share-alt"></i> 0 shares</span>
+																	<div class="socialshare_list"> <a
+																			href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Fdiario-de-pe-demite-mais-5-e-persegue-jailson-da-paz-e-osnaldo-morais%2F"
+																			class="jeg_share_fb"><span
+																				class="share-text">Share</span> <span
+																				class="share-count">0</span></a> <a
+																			href="https://twitter.com/intent/tweet?text=Di%C3%A1rio%20de%20PE%20demite%20mais%205%20e%20persegue%20Jailson%20da%20Paz%20e%20Osnaldo%20Morais&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fdiario-de-pe-demite-mais-5-e-persegue-jailson-da-paz-e-osnaldo-morais%2F"
+																			class="jeg_share_tw"><span
+																				class="share-text">Tweet</span> <span
+																				class="share-count">0</span></a></div>
+																</div>
+															</div>
+														</li>
+														<li class="popularpost_item format-standard">
+															<h3 class="jeg_post_title"> <a
+																	href="https://ricardoantunes.com.br/felipe-carreras-psb-pediu-r-35-milhoes-de-propina-a-associacao-de-jogos1/"
+																	data-num="02">Felipe Carreras (PSB) pediu R$ 35
+																	milhões de propina a Associação de Jogos</a></h3>
+															<div class="popularpost_meta">
+																<div class="jeg_socialshare"> <span
+																		class="share_count"><i
+																			class="fa fa-share-alt"></i> 0 shares</span>
+																	<div class="socialshare_list"> <a
+																			href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Ffelipe-carreras-psb-pediu-r-35-milhoes-de-propina-a-associacao-de-jogos1%2F"
+																			class="jeg_share_fb"><span
+																				class="share-text">Share</span> <span
+																				class="share-count">0</span></a> <a
+																			href="https://twitter.com/intent/tweet?text=Felipe%20Carreras%20%28PSB%29%20pediu%20R%24%2035%20milh%C3%B5es%20de%20propina%20a%20Associa%C3%A7%C3%A3o%20de%20Jogos&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Ffelipe-carreras-psb-pediu-r-35-milhoes-de-propina-a-associacao-de-jogos1%2F"
+																			class="jeg_share_tw"><span
+																				class="share-text">Tweet</span> <span
+																				class="share-count">0</span></a></div>
+																</div>
+															</div>
+														</li>
+														<li class="popularpost_item format-standard">
+															<h3 class="jeg_post_title"> <a
+																	href="https://ricardoantunes.com.br/preso-ha-15-dias-noe-magalhaes-contrata-kakay-para-tira-lo-do-cotel/"
+																	data-num="03">Preso há 15 dias, Noé Magalhães,
+																	contrata Kakay para tirá-lo do Cotel</a></h3>
+															<div class="popularpost_meta">
+																<div class="jeg_socialshare"> <span
+																		class="share_count"><i
+																			class="fa fa-share-alt"></i> 0 shares</span>
+																	<div class="socialshare_list"> <a
+																			href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Fpreso-ha-15-dias-noe-magalhaes-contrata-kakay-para-tira-lo-do-cotel%2F"
+																			class="jeg_share_fb"><span
+																				class="share-text">Share</span> <span
+																				class="share-count">0</span></a> <a
+																			href="https://twitter.com/intent/tweet?text=Preso%20h%C3%A1%2015%20dias%2C%20No%C3%A9%20Magalh%C3%A3es%2C%20contrata%20Kakay%20para%20tir%C3%A1-lo%20do%20Cotel&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fpreso-ha-15-dias-noe-magalhaes-contrata-kakay-para-tira-lo-do-cotel%2F"
+																			class="jeg_share_tw"><span
+																				class="share-text">Tweet</span> <span
+																				class="share-count">0</span></a></div>
+																</div>
+															</div>
+														</li>
+														<li class="popularpost_item format-standard">
+															<h3 class="jeg_post_title"> <a
+																	href="https://ricardoantunes.com.br/ufpe-persegue-servidores-fundaj-apoia/"
+																	data-num="04">UFPE persegue servidores. Fundaj
+																	apoia</a></h3>
+															<div class="popularpost_meta">
+																<div class="jeg_socialshare"> <span
+																		class="share_count"><i
+																			class="fa fa-share-alt"></i> 0 shares</span>
+																	<div class="socialshare_list"> <a
+																			href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Fufpe-persegue-servidores-fundaj-apoia%2F"
+																			class="jeg_share_fb"><span
+																				class="share-text">Share</span> <span
+																				class="share-count">0</span></a> <a
+																			href="https://twitter.com/intent/tweet?text=UFPE%20persegue%20servidores.%20Fundaj%20apoia&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fufpe-persegue-servidores-fundaj-apoia%2F"
+																			class="jeg_share_tw"><span
+																				class="share-text">Tweet</span> <span
+																				class="share-count">0</span></a></div>
+																</div>
+															</div>
+														</li>
+														<li class="popularpost_item format-standard">
+															<h3 class="jeg_post_title"> <a
+																	href="https://ricardoantunes.com.br/conheca-o-operador-do-psb-que-tentou-o-esquema-de-r-52-milhoes-no-governo-de-raquel1/"
+																	data-num="05">Conheça o “operador” do PSB que tentou
+																	o esquema de R$ 52 milhões no Governo de Raquel</a>
+															</h3>
+															<div class="popularpost_meta">
+																<div class="jeg_socialshare"> <span
+																		class="share_count"><i
+																			class="fa fa-share-alt"></i> 0 shares</span>
+																	<div class="socialshare_list"> <a
+																			href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fricardoantunes.com.br%2Fconheca-o-operador-do-psb-que-tentou-o-esquema-de-r-52-milhoes-no-governo-de-raquel1%2F"
+																			class="jeg_share_fb"><span
+																				class="share-text">Share</span> <span
+																				class="share-count">0</span></a> <a
+																			href="https://twitter.com/intent/tweet?text=Conhe%C3%A7a%20o%20%E2%80%9Coperador%E2%80%9D%20do%20PSB%20que%20tentou%20o%20esquema%20de%20R%24%2052%20milh%C3%B5es%20no%20Governo%20de%20Raquel&amp;url=https%3A%2F%2Fricardoantunes.com.br%2Fconheca-o-operador-do-psb-que-tentou-o-esquema-de-r-52-milhoes-no-governo-de-raquel1%2F"
+																			class="jeg_share_tw"><span
+																				class="share-text">Tweet</span> <span
+																				class="share-count">0</span></a></div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="widget widget_media_image" id="media_image-13">
+													<div
+														class="jeg_block_heading jeg_block_heading_6 jnews_650f4bd3d574f">
+														<h3 class="jeg_block_title"><span>Coluna das Dez</span></h3>
+													</div><a href="https://ricardoantunes.com.br/coluna/"><img
+															width="300" height="300"
+															src="images/coluna-das-dez300x300.jpg"
+															class="image wp-image-137908  attachment-full size-full"
+															alt="" decoding="async"
+															style="max-width: 100%; height: auto;" loading="lazy"
+															srcset="images/coluna-das-dez300x300.jpg 300w, images/coluna-das-dez300x300-150x150.jpg 150w, images/coluna-das-dez300x300-75x75.jpg 75w"
+															sizes="(max-width: 300px) 100vw, 300px"></a>
+												</div>
+												<div class="widget widget_mc4wp_form_widget" id="mc4wp_form_widget-2">
+													<script>(function () {
+															window.mc4wp = window.mc4wp || {
+																listeners: [],
+																forms: {
+																	on: function (evt, cb) {
+																		window.mc4wp.listeners.push(
+																			{
+																				event: evt,
+																				callback: cb
+																			}
+																		);
+																	}
+																}
+															}
+														})();</script>
+													<form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-81"
+														method="post" data-id="81" data-name="Newsletter">
+														<div class="mc4wp-form-fields">Assine nossa lista para receber
+															atualizações diárias diretamente em sua caixa de entrada!<p>
+															</p>
+															<p> <input type="email" name="EMAIL" placeholder="Seu email"
+																	required=""></p>
+															<p> <input type="submit" value="ASSINAR"></p>
+														</div><label style="display: none !important;">Leave this field
+															empty if you're human: <input type="text"
+																name="_mc4wp_honeypot" value="" tabindex="-1"
+																autocomplete="off"></label><input type="hidden"
+															name="_mc4wp_timestamp" value="1695501267"><input
+															type="hidden" name="_mc4wp_form_id" value="81"><input
+															type="hidden" name="_mc4wp_form_element_id"
+															value="mc4wp-form-1">
+														<div class="mc4wp-response"></div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="jeg_ad jeg_article jnews_article_bottom_ads">
+									<div class="ads-wrapper  "></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="post-body-class"
+					class="post-template-default single single-post postid-145698 single-format-standard wp-embed-responsive non-logged-in jeg_toggle_light jeg_single_tpl_1 jnews jsc_normal elementor-default elementor-kit-9">
+				</div>
+			</div>
+			<div class="post-ajax-overlay">
+				<div class="preloader_type preloader_dot">
+					<div class="newsfeed_preloader jeg_preloader dot"> <span></span><span></span><span></span></div>
+					<div class="newsfeed_preloader jeg_preloader circle">
+						<div class="jnews_preloader_circle_outer">
+							<div class="jnews_preloader_circle_inner"></div>
+						</div>
+					</div>
+					<div class="newsfeed_preloader jeg_preloader square">
+						<div class="jeg_square">
+							<div class="jeg_square_inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-holder" id="footer" data-id="footer">
+			<div class="jeg_footer jeg_footer_1 normal">
+				<div class="jeg_footer_container jeg_container">
+					<div class="jeg_footer_content">
+						<div class="container">
+							<div class="row">
+								<div class="jeg_footer_primary clearfix">
+									<div class="col-md-4 footer_column">
+										<div class="footer_widget widget_jnews_about" id="jnews_about-2">
+											<div class="jeg_about "> <a class="footer_logo"
+													href="https://ricardoantunes.com.br/"> <img class="lazyload"
+														src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+														data-src="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+														data-srcset="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x"
+														alt="Blog do Ricardo Antunes"
+														data-light-src="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+														data-light-srcset="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x"
+														data-dark-src="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png"
+														data-dark-srcset="https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 1x, https://ricardoantunes.com.br/wp-content/uploads/2023/02/Logo-300px-Ricardo-Antunes.png 2x"
+														data-pin-no-hover="true"> </a>
+												<p>Ricardo Antunes - Debates, polêmicas, notícias exclusivas,
+													entrevistas, análises e vídeos exclusivos.</p>
+											</div>
+										</div>
+										<div class="footer_widget widget_jnews_social" id="jnews_social-2">
+											<div class="jeg_social_wrap ">
+												<p> <strong>SIGA-NOS NAS REDES SOCIAIS</strong></p>
+												<div class="socials_widget   rounded"> <a
+														href="https://www.facebook.com/blogricardoantunes/"
+														target="_blank" rel="external noopener nofollow"
+														class="jeg_facebook"> <i class="fa fa-facebook"></i> </a><a
+														href="https://twitter.com/blogricaantunes" target="_blank"
+														rel="external noopener nofollow" class="jeg_twitter"> <i
+															class="fa fa-twitter"><span
+																class="jeg-icon icon-twitter"><svg
+																	xmlns="http://www.w3.org/2000/svg" height="1em"
+																	viewBox="0 0 512 512">
+																	<path
+																		d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+																	</path>
+																</svg></span></i> </a><a
+														href="https://www.instagram.com/ricardoantunesblog/"
+														target="_blank" rel="external noopener nofollow"
+														class="jeg_instagram"> <i class="fa fa-instagram"></i> </a><a
+														href="https://www.youtube.com/@blogricardoantunes"
+														target="_blank" rel="external noopener nofollow"
+														class="jeg_youtube"> <i class="fa fa-youtube-play"></i> </a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 footer_column">
+										<div class="footer_widget widget_jnews_recent_news" id="jnews_recent_news-2">
+											<div class="jeg_footer_heading jeg_footer_heading_1">
+												<h3 class="jeg_footer_title"><span>Últimas</span></h3>
+											</div>
+											<div class="jeg_postblock">
+												<div
+													class="jeg_post jeg_pl_sm post-145808 post type-post status-publish format-standard has-post-thumbnail hentry category-politica">
+													<div class="jeg_thumb"> <a
+															href="https://ricardoantunes.com.br/cunha-garotinho-arruda-maluf-minirreforma-eleitoral-reabilitar-politicos-presos/">
+															<div class="thumbnail-container  size-715 "><img width="120"
+																	height="86" src="images/arte-6--120x86.jpg"
+																	class=" wp-post-image"
+																	alt="Mudança na lei eleitoral pode antecipar fim da inelegibilidade de conhecidos caciques"
+																	decoding="async"></div>
+														</a></div>
+													<div class="jeg_postblock_content">
+														<h3 property="headline" class="jeg_post_title"><a property="url"
+																href="https://ricardoantunes.com.br/cunha-garotinho-arruda-maluf-minirreforma-eleitoral-reabilitar-politicos-presos/">Cunha,
+																Garotinho, Arruda, Maluf: minirreforma eleitoral
+																reabilitar políticos presos</a></h3>
+													</div>
+												</div>
+												<div
+													class="jeg_post jeg_pl_sm post-145800 post type-post status-publish format-standard has-post-thumbnail hentry category-brasil category-lei-ordem category-poder category-politica tag-direitos-humanos tag-fake-news tag-felipe-barros tag-lula tag-ministro tag-nikolas-ferreira tag-silvio-almeida">
+													<div class="jeg_thumb"> <a
+															href="https://ricardoantunes.com.br/ministro-de-lula-aciona-agu-contra-nikolas-ferreira-e-felipe-barros-por-fake-news/">
+															<div class="thumbnail-container  size-715 "><img width="120"
+																	height="86"
+																	src="images/Design-sem-nome-2-2-120x86.jpg"
+																	class=" wp-post-image"
+																	alt="Os deputados do PL, Nikolas Ferreira e Felipe Barros (dir.)"
+																	decoding="async"></div>
+														</a></div>
+													<div class="jeg_postblock_content">
+														<h3 property="headline" class="jeg_post_title"><a property="url"
+																href="https://ricardoantunes.com.br/ministro-de-lula-aciona-agu-contra-nikolas-ferreira-e-felipe-barros-por-fake-news/">Ministro
+																de Lula aciona AGU contra Nikolas Ferreira e Felipe
+																Barros por fake news</a></h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 footer_column">
+										<div class="footer_widget widget_mc4wp_form_widget" id="mc4wp_form_widget-3">
+											<div class="jeg_footer_heading jeg_footer_heading_1">
+												<h3 class="jeg_footer_title"><span>Newsletter</span></h3>
+											</div>
+											<script>(function () {
+													window.mc4wp = window.mc4wp || {
+														listeners: [],
+														forms: {
+															on: function (evt, cb) {
+																window.mc4wp.listeners.push(
+																	{
+																		event: evt,
+																		callback: cb
+																	}
+																);
+															}
+														}
+													}
+												})();</script>
+											<form id="mc4wp-form-2" class="mc4wp-form mc4wp-form-81" method="post"
+												data-id="81" data-name="Newsletter">
+												<div class="mc4wp-form-fields">Assine nossa lista para receber
+													atualizações diárias diretamente em sua caixa de entrada!<p></p>
+													<p> <input type="email" name="EMAIL" placeholder="Seu email"
+															required=""></p>
+													<p> <input type="submit" value="ASSINAR"></p>
+												</div><label style="display: none !important;">Leave this field empty if
+													you're human: <input type="text" name="_mc4wp_honeypot" value=""
+														tabindex="-1" autocomplete="off"></label><input type="hidden"
+													name="_mc4wp_timestamp" value="1695501267"><input type="hidden"
+													name="_mc4wp_form_id" value="81"><input type="hidden"
+													name="_mc4wp_form_element_id" value="mc4wp-form-2">
+												<div class="mc4wp-response"></div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jeg_footer_secondary clearfix">
+								<div class="footer_right">
+									<ul class="jeg_menu_footer">
+										<li id="menu-item-48"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48">
+											<a href="https://ricardoantunes.com.br/quem-somos/">Quem Somos</a></li>
+										<li id="menu-item-47"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
+											<a href="https://ricardoantunes.com.br/quem-e-ricardo-antunes/">Quem é
+												Ricardo Antunes</a></li>
+										<li id="menu-item-129872"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-129872">
+											<a target="_blank" rel="noopener"
+												href="https://apoia.se/blogdoricardoantunes">Apoie</a></li>
+										<li id="menu-item-49"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49">
+											<a
+												href="https://ricardoantunes.us1.list-manage.com/subscribe?u=a09e330d7f1c598045cb3ff70&amp;id=0d18bd4e8c">Newsletter</a>
+										</li>
+										<li id="menu-item-44"
+											class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-44">
+											<a href="https://ricardoantunes.com.br/arquivo/">Arquivo</a></li>
+										<li id="menu-item-46"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46">
+											<a href="https://ricardoantunes.com.br/fale-conosco/">Fale Conosco</a></li>
+										<li id="menu-item-45"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-45">
+											<a rel="privacy-policy" href="https://ricardoantunes.com.br/tos/">Termos de
+												Uso</a></li>
+									</ul>
+								</div>
+								<p class="copyright"> © 2023 <a href="https://ricardoantunes.com.br"
+										title="Ricardo Antunes">Ricardo Antunes</a> - Todos Direitos Reservados | <a
+										href="https://zionlab.com.br" title="ZionLab">Powered by ZionLab</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jscroll-to-top"> <a href="#back-to-top" class="jscroll-to-top_link"><i
+					class="fa fa-angle-up"></i></a></div>
+	</div>
+	<div id="jeg_off_canvas" class="normal"> <a href="#" class="jeg_menu_close"><i class="jegicon-cross"></i></a>
+		<div class="jeg_bg_overlay"></div>
+		<div class="jeg_mobile_wrapper">
+			<div class="nav_wrap">
+				<div class="item_main">
+					<div class="jeg_aside_item jeg_search_wrapper jeg_search_no_expand round"> <a href="#"
+							class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+						<form action="https://ricardoantunes.com.br/" method="get" class="jeg_search_form"
+							target="_top"> <input name="s" class="jeg_search_input" placeholder="Pesquisar..."
+								type="text" value="" autocomplete="off"> <button aria-label="Search Button"
+								type="submit" class="jeg_search_button btn"><i class="fa fa-search"></i></button></form>
+						<div class="jeg_search_result jeg_search_hide with_result">
+							<div class="search-result-wrapper"></div>
+							<div class="search-link search-noresult"> Sem Resultados</div>
+							<div class="search-link search-all-button"> <i class="fa fa-search"></i> Ver todos os
+								resultados</div>
+						</div>
+					</div>
+					<div class="jeg_aside_item">
+						<ul class="jeg_mobile_menu sf-js-hover">
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126754"><a
+									href="https://ricardoantunes.com.br/opiniao/">Opinião</a></li>
+							<li
+								class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126755">
+								<a href="https://ricardoantunes.com.br/politica/">Política</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137940"><a
+									href="https://ricardoantunes.com.br/coluna/">Coluna das Dez</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126756"><a
+									href="https://ricardoantunes.com.br/economia/">Economia</a></li>
+							<li
+								class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-126757">
+								<a href="https://ricardoantunes.com.br/brasil/">Brasil</a></li>
+							<li
+								class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-126758">
+								<a href="https://ricardoantunes.com.br/pernambuco/">Pernambuco</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126760"><a
+									href="https://ricardoantunes.com.br/esportes/">Esportes</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126761"><a
+									href="https://ricardoantunes.com.br/cultura/">Cultura</a></li>
+							<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-126763"><a
+									href="https://ricardoantunes.com.br/tecnologia/">Tecnologia</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item_bottom">
+					<div class="jeg_aside_item socials_widget rounded"> <a
+							href="https://www.facebook.com/blogricardoantunes/" target="_blank"
+							rel="external noopener nofollow" class="jeg_facebook"><i class="fa fa-facebook"></i> </a><a
+							href="https://twitter.com/blogricaantunes" target="_blank" rel="external noopener nofollow"
+							class="jeg_twitter"><i class="fa fa-twitter"><span class="jeg-icon icon-twitter"><svg
+										xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+										<path
+											d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+										</path>
+									</svg></span></i> </a><a href="https://www.instagram.com/ricardoantunesblog/"
+							target="_blank" rel="external noopener nofollow" class="jeg_instagram"><i
+								class="fa fa-instagram"></i> </a><a href="https://www.youtube.com/@blogricardoantunes"
+							target="_blank" rel="external noopener nofollow" class="jeg_youtube"><i
+								class="fa fa-youtube-play"></i> </a><a href="" target="_blank"
+							rel="external noopener nofollow" class="jeg_telegram"><i class="fa fa-telegram"></i> </a><a
+							href="" target="_blank" rel="external noopener nofollow" class="jeg_whatsapp"><i
+								class="fa fa-whatsapp"></i> </a></div>
+					<div class="jeg_aside_item jeg_aside_copyright">
+						<p>© 2023 <a href="https://ricardoantunes.com.br" title="Ricardo Antunes">Ricardo Antunes</a> -
+							Todos Direitos Reservados | <a href="https://zionlab.com.br" title="ZionLab">Powered by
+								ZionLab</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">var jfla = ["view_counter"]</script>
+	<script>(function () {
+										function maybePrefixUrlField() {
+											const value = this.value.trim()
+											if (value !== '' && value.indexOf('http') !== 0) {
+												this.value = 'http://' + value
+											}
+										}
+
+										const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+										for (let j = 0; j < urlFields.length; j++) {
+											urlFields[j].addEventListener('blur', maybePrefixUrlField)
+										}
+									})();</script>
+	<div id="selectShareContainer">
+		<div class="selectShare-inner">
+			<div class="select_share jeg_share_button"> <button class="select-share-button jeg_btn-facebook"
+					data-url="http://www.facebook.com/sharer.php?u=[url]&amp;quote=[selected_text]"
+					data-post-url="https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+					data-image-url=""
+					data-title="Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru"><i
+						class="fa fa-facebook-official"></i></button><button class="select-share-button jeg_btn-twitter"
+					data-url="https://twitter.com/intent/tweet?text=[selected_text]&amp;url=[url]"
+					data-post-url="https%3A%2F%2Fricardoantunes.com.br%2Fex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru%2F"
+					data-image-url=""
+					data-title="Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru"><i
+						class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+							viewBox="0 0 512 512">
+							<path
+								d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+							</path>
+						</svg></i></button></div>
+			<div class="selectShare-arrowClip">
+				<div class="selectShare-arrow"></div>
+			</div>
+		</div>
+	</div>
+	<div class="jnews-cookie-law-policy">Este site usa cookies. Ao continuar a usar este site, você concorda com o uso
+		de cookies. Visite nossa <a href="https://ricardoantunes.com.br/tos/">Política de Privacidade</a>. <button
+			data-expire="7" class="btn btn-cookie">ACEITAR</button></div>
+	<div class="jeg_read_progress_wrapper">
+		<div class="jeg_progress_container bottom"><span class="progress-bar"></span></div>
+	</div> 
+	
+	<script type="text/javascript">jQuery(document).ready(function ($) {
+			$(".post-145698").fitVids({ customSelector: "iframe.wistia_embed" });
+		});</script>
+	<link rel="stylesheet" id="elementor-post-137922-css"
+		href="css/autoptimize_single_a6696289ab4dd03dcb7c79d501415001.css" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-post-9-css" href="css/autoptimize_single_b2b45778676d1151e444e630868632cf.css"
+		type="text/css" media="all">
+	<script type="text/javascript" src="js/comment-reply.min.js" id="comment-reply-js"></script>
+	<script type="text/javascript" src="js/hoverIntent.min.js" id="hoverIntent-js"></script>
+	<script type="text/javascript" src="js/imagesloaded.min.js" id="imagesloaded-js"></script>
+	<script type="text/javascript" src="js/isotope.js" id="isotope-js"></script>
+	<script type="text/javascript" src="js/lazysizes.js" id="lazysizes-js"></script>
+	<script type="text/javascript" src="js/ls.bgset.js" id="bgset-js"></script>
+	<script type="text/javascript" src="js/superfish.js" id="superfish-js"></script>
+	<script type="text/javascript" src="js/theia-sticky-sidebar.js" id="theia-sticky-sidebar-js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.js" id="waypoint-js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo.js" id="scrollto-js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js" id="parallax-js"></script>
+	<script type="text/javascript" src="js/jquery.okayNav.js" id="okaynav-js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js" id="mousewheel-js"></script>
+	<script type="text/javascript" src="js/modernizr-custom.js" id="modernizr-js"></script>
+	<script type="text/javascript" src="js/jquery.smartresize.js" id="smartresize-js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.js" id="chosen-js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js" id="magnific-js"></script>
+	<script type="text/javascript" src="js/jquery.jnewsgif.js" id="jnews-gif-js"></script>
+	<script type="text/javascript" src="js/jquery.jsticky.js" id="jnews-sticky-js"></script>
+	<script type="text/javascript" src="js/jquery.transit.min.js" id="jquery-transit-js"></script>
+	<script type="text/javascript" src="js/jquery.module.js" id="jnews-landing-module-js"></script>
+	<script type="text/javascript"
+		id="jnews-main-js-extra">var jnewsoption = { "login_reload": "https:\/\/ricardoantunes.com.br\/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru", "popup_script": "magnific", "single_gallery": "", "ismobile": "", "isie": "", "sidefeed_ajax": "", "language": "pt_BR", "module_prefix": "jnews_module_ajax_", "live_search": "1", "postid": "145698", "isblog": "1", "admin_bar": "0", "follow_video": "1", "follow_position": "top_right", "rtl": "0", "gif": "1", "lang": { "invalid_recaptcha": "Recaptcha inv\u00e1lido!", "empty_username": "Por favor, insira seu nome de usu\u00e1rio!", "empty_email": "Por favor, insira seu e-mail!", "empty_password": "Por favor, insira sua senha!" }, "recaptcha": "0", "site_slug": "\/", "site_domain": "ricardoantunes.com.br", "zoom_button": "1" };</script>
+	<script type="text/javascript" src="js/main.js" id="jnews-main-js"></script>
+	<script type="text/javascript" src="js/floating-video.js" id="jnews-floating-video-js"></script>
+	<script type="text/javascript" src="js/zoom-button.js" id="jnews-zoom-button-js"></script>
+	<script type="text/javascript" src="js/popup-post.js" id="jnews-popup-post-js"></script>
+	<script type="text/javascript" src="js/darkmode.js" id="jnews-darkmode-js"></script>
+	<!--[if lt IE 9]> <script type='text/javascript' src='https://ricardoantunes.com.br/wp-content/themes/jnews/assets/js/html5shiv.min.js?ver=1.0.0' id='html5shiv-js'></script> <![endif]-->
+	<script type="text/javascript"
+		id="jnews-select-share-js-extra">var jnews_select_share = { "is_customize_preview": "" };</script>
+	<script type="text/javascript" src="js/plugin.js" id="jnews-select-share-js"></script>
+	<script type="text/javascript" src="js/plugin_1.js" id="jnews-push-notification-js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.min.js" id="fitvids-js"></script>
+	<script type="text/javascript" src="js/OneSignalSDK.js" async="async" id="remote_sdk-js"></script>
+	<script type="text/javascript" defer="" src="js/forms.js" id="mc4wp-forms-api-js"></script>
+	<script type="text/javascript" src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+	<script type="text/javascript" src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+	<script type="text/javascript" src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+	<script type="text/javascript" src="js/wp-polyfill-inert.min.js" id="wp-polyfill-inert-js"></script>
+	<script type="text/javascript" src="js/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+	<script type="text/javascript" src="js/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+	<script type="text/javascript" src="js/hooks.min.js" id="wp-hooks-js"></script>
+	<script type="text/javascript" src="js/i18n.min.js" id="wp-i18n-js"></script>
+	<script id="wp-i18n-js-after"
+		type="text/javascript">wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });</script>
+	<script id="elementor-pro-frontend-js-before"
+		type="text/javascript">var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/ricardoantunes.com.br\/wp-admin\/admin-ajax.php", "nonce": "5c896a47ad", "urls": { "assets": "https:\/\/ricardoantunes.com.br\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/ricardoantunes.com.br\/wp-json\/" }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "pt_BR", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/ricardoantunes.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };</script>
+	<script type="text/javascript" src="js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js" id="elementor-waypoints-js"></script>
+	<script type="text/javascript" src="js/core.min.js" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before"
+		type="text/javascript">var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Compartilhar no Facebook", "shareOnTwitter": "Compartilhar no Twitter", "pinIt": "Fixar", "download": "Baixar", "downloadImage": "Baixar imagem", "fullscreen": "Tela cheia", "zoom": "Zoom", "share": "Compartilhar", "playVideo": "Reproduzir v\u00eddeo", "previous": "Anterior", "next": "Pr\u00f3ximo", "close": "Fechar", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Celular em modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Celular em modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Retrato", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Paisagem do tablet", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.15.3", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "theme_builder_v2": true, "landing-pages": true, "page-transitions": true, "notes": true, "loop": true, "form-submissions": true, "e_scroll_snap": true }, "urls": { "assets": "https:\/\/ricardoantunes.com.br\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 145698, "title": "Ex-servidora%20denuncia%20demiss%C3%B5es%2C%20ass%C3%A9dio%20moral%20e%20outras%20irregularidades%20na%20Prefeitura%20de%20Caruaru%20-%20Blog%20do%20Ricardo%20Antunes", "excerpt": "", "featuredImage": "https:\/\/ricardoantunes.com.br\/wp-content\/uploads\/2023\/09\/header-blog-assedio-moral-arraesecenteno.jpg" } };</script>
+	<script type="text/javascript" src="js/frontend.min_1.js" id="elementor-frontend-js"></script>
+	<script type="text/javascript" src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+	<div class="jeg_ad jnews_mobile_sticky_ads "></div>
+	<script
+		type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/ricardoantunes.com.br\/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru\/"},"dateCreated":"2023-09-23 08:00:30","datePublished":"2023-09-23 08:00:30","dateModified":"2023-09-22 18:49:06","url":"https:\/\/ricardoantunes.com.br\/ex-servidora-denuncia-demissoes-assedio-moral-e-outras-irregularidades-na-prefeitura-de-caruaru\/","headline":"Ex-servidora denuncia demiss\u00f5es, ass\u00e9dio moral e outras irregularidades na Prefeitura de Caruaru","name":"Ex-servidora denuncia demiss\u00f5es, ass\u00e9dio moral e outras irregularidades na Prefeitura de Caruaru","articleBody":"<b>EXCLUSIVO,\u00a0<\/b><b>Por Danilo Duarte - <\/b>Uma ex-servidora do Munic\u00edpio de Caruaru, que n\u00e3o quis se identificar, temendo repres\u00e1lias, entrou em contato conosco para denunciar suposto ass\u00e9dio moral e outros abusos da Prefeitura contra alguns servidores municipais. Segundo informou, nos \u00faltimos dias, alguns funcion\u00e1rios foram pegos de surpresa com o fim do contrato com o \u00f3rg\u00e3o p\u00fablico.\r\n\r\nA ex-servidora nos encaminhou alguns prints de conversas em grupos de mensagem com outros servidores da sa\u00fade e da educa\u00e7\u00e3o.\r\n<h3>Confira:<\/h3>\r\n[gallery columns=\"1\" size=\"full\" jnewsslider=\"true\" jnewsslider_zoom=\"true\" jnewsslider_ads=\"true\" ids=\"145723,145724,145725,145726,145727,145728\"]\r\n\r\nTem tamb\u00e9m conversas com uma funcion\u00e1ria da Secretaria de Administra\u00e7\u00e3o (SAD), que tentou justificar as demiss\u00f5es como estrat\u00e9gia de contingenciamento e convoca\u00e7\u00e3o de efetivos.\r\n<h3>Veja as mensagens:<\/h3>\r\n[gallery columns=\"1\" size=\"full\" jnewsslider=\"true\" jnewsslider_zoom=\"true\" jnewsslider_ads=\"true\" ids=\"145730,145731,145732,145733,145734,145735,145736\"]\r\n\r\nPor\u00e9m, segundo apuramos, n\u00e3o houve at\u00e9 o momento nenhuma publica\u00e7\u00e3o no Di\u00e1rio Oficial do Munic\u00edpio sobre convoca\u00e7\u00e3o de novos efetivos para as secretarias citadas.\r\n\r\n\u201cOnde eu trabalhei, foram demitidos eu e mais sete. O gestor falou que foi por falta de fundo municipal, que a cidade est\u00e1 em emerg\u00eancia reduzindo o quadro de funcion\u00e1rios, desligando e talvez recontrate ano que vem as mesmas pessoas, o que \u00e9 mentira, porque o RH nunca fez isso. Na segunda-feira o prefeito disse que era por causa do fundo municipal. A chefe de gabinete diz que \u00e9 pelo contingenciamento. Muitos demitidos, a deriva, de m\u00e3os abanando sem direito a nada. E nada de an\u00fancio oficial de prefeitura\u201d, questionou.\r\n\r\nA ex-servidora relatou que nos quatro anos que serviu ao Munic\u00edpio testemunhou muitos abusos dentro da Prefeitura de Caruaru.\r\n\r\n\u201cEu fiquei quatro anos, e o que vi foi muito ass\u00e9dio moral de gestores e gerentes com equipes, prefeito fazendo vista grossa e nomeando muitas pessoas que n\u00e3o t\u00eam capacidade para o cargo, irregularidades em contrato de transportes de alunos, muita coisa. Quem est\u00e1 dentro sabe, as demiss\u00f5es v\u00eam do gabinete, que passa para o RH, que passa para escolas e\/ou centros de sa\u00fade. Gabinete mexendo pe\u00e7as. E quem saiu, entrou por sele\u00e7\u00e3o como eu. N\u00e3o foi \u2018QI\u2019 ou \u2018arrumadinho\u2019. Isso \u00e9 fato\u201d, denunciou.\r\n\r\nOutra den\u00fancia grave \u00e9 direcionada a atual chefe de gabinete da SAD, K\u00e1tia Torres. Segundo a ex-servidora, \u201cEssa mesma Katia foi a respons\u00e1vel por escolher quem ia receber o rateio de 2021 na educa\u00e7\u00e3o. Pessoas que nem trabalhavam em escola receberam, e quem estava n\u00e3o recebeu. Ela decidia por crit\u00e9rio dela, ignorava o que estava no decreto na \u00e9poca\u201d.\r\n\r\nH\u00e1 den\u00fancias de ass\u00e9dio moral tamb\u00e9m. A ex-servidora relata um epis\u00f3dio que aconteceu em 2021, quando estava lotada na secretaria de educa\u00e7\u00e3o, onde K\u00e1tia exercia a fun\u00e7\u00e3o de gerente do RH na \u00e9poca. Segundo conta, com o falecimento do seu av\u00f4, que residia em S\u00e3o Paulo, a ex-servidora pediu afastamento para acompanhar o enterro do familiar, mas o direito foi negado.\r\n\r\n\u201cQuando h\u00e1 falecimento de algu\u00e9m da fam\u00edlia de um servidor, ele tem direito a um afastamento de dois ou tr\u00eas dias. Eu falei a minha gestora escolar na \u00e9poca. Ela foi contra, mas foi falar com Katia sobre, para liberar. Nem que adiantasse minhas f\u00e9rias, pois eu sofri muito. Nem a gestora escolar e nem Katia deram os dias. N\u00e3o pude ir ao enterro do meu av\u00f4. E mesmo no dia em que ele faleceu e eu fiquei arrasada, continuavam a me cobrar trabalho via WhatsApp e liga\u00e7\u00f5es. Todos estavam cientes, mas ningu\u00e9m me deu o direito, enquanto que minha gestora ficou um m\u00eas afastada ap\u00f3s a morte da irm\u00e3 dela\u201d, desabafou.\r\n<h3>Ou\u00e7a os \u00e1udios:<\/h3>\r\nhttps:\/\/youtu.be\/cs4UGELaE_Q\r\n\r\nSobre as demiss\u00f5es, a fonte afirma que a Prefeitura teria mandado listas em branco para os gestores de escolas com a quantidade de demiss\u00f5es por unidade, sendo os pr\u00f3prios gestores os respons\u00e1veis por incluir os nomes nas listas. \u201cDemitiram at\u00e9 quem estava de licen\u00e7a m\u00e9dica. E teve quebra de contrato com todos os funcion\u00e1rios, pois t\u00ednhamos contrato at\u00e9 dezembro. Teve lista que apareceu depois das primeiras demiss\u00f5es, onde quem definia era o gabinete. Agora \u00e9 o gestor de escola que, com certeza, vai por os dele no nosso lugar\u201d.\r\n\r\nHouve demiss\u00f5es e nomea\u00e7\u00f5es tamb\u00e9m na Funda\u00e7\u00e3o de Cultura, onde interino assumiu no lugar do ex-presidente. A mudan\u00e7a foi publicada no Di\u00e1rio Oficial do Munic\u00edpio, na \u00faltima segunda-feira (18).\r\n<h3>Confira:<\/h3>\r\n[caption id=\"attachment_145707\" align=\"aligncenter\" width=\"1000\"]<img class=\"size-full wp-image-145707\" src=\"https:\/\/ricardoantunes.com.br\/wp-content\/uploads\/2023\/09\/WhatsApp-Image-2023-09-22-at-14.18.47.jpg\" alt=\"\" width=\"1000\" height=\"1350\" \/> Di\u00e1rio Oficial de Caruaru publicou exonera\u00e7\u00e3o na Funda\u00e7\u00e3o Cultural[\/caption]\r\n<h3>O Outro Lado<\/h3>\r\nEntramos em contato com a chefe de gabinete da SAD, K\u00e1tia Torres. Sobre as acusa\u00e7\u00f5es de que seria ela a respons\u00e1vel por definir quem receberia o rateio da Educa\u00e7\u00e3o, K\u00e1tia confirmou que trabalhou na Secretaria de Educa\u00e7\u00e3o de Caruaru, no setor de Recursos Humanos, mas negou que era ela quem definia o rateio. Sobre as demais acusa\u00e7\u00f5es, a chefe de gabinete disse que est\u00e1 \u201canalisando o teor da den\u00fancia\u201d, e que ir\u00e1 se manifestar posteriormente.\r\n\r\nA Assessoria de Comunica\u00e7\u00e3o da Prefeitura de Caruaru n\u00e3o atendeu \u00e0s nossas liga\u00e7\u00f5es. \u00a0Ent\u00e3o enviamos a reclama\u00e7\u00e3o para a ouvidoria do Munic\u00edpio, mas at\u00e9 o fechamento desta mat\u00e9ria, n\u00e3o tivemos retorno.","author":{"@type":"Person","name":"Danilo Duarte","url":"https:\/\/ricardoantunes.com.br\/author\/danilo-duarte\/"},"articleSection":["Caruaru","Munic\u00edpios","Pernambuco","Poder","Pol\u00edtica"],"image":{"@type":"ImageObject","url":"https:\/\/ricardoantunes.com.br\/wp-content\/uploads\/2023\/09\/header-blog-assedio-moral-arraesecenteno.jpg","width":1000,"height":600},"publisher":{"@type":"Organization","name":"","url":"https:\/\/ricardoantunes.com.br","logo":{"@type":"ImageObject","url":""},"sameAs":["https:\/\/www.facebook.com\/blogricardoantunes\/","https:\/\/twitter.com\/blogricaantunes","https:\/\/www.instagram.com\/ricardoantunesblog\/","https:\/\/www.youtube.com\/@blogricardoantunes"]}}</script>
+	<script
+		type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"hentry","entry-title":"Ex-servidora denuncia demiss\u00f5es, ass\u00e9dio moral e outras irregularidades na Prefeitura de Caruaru","published":"2023-09-23 08:00:30","updated":"2023-09-22 18:49:06"}</script>
+	<script
+		type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/ricardoantunes.com.br","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/ricardoantunes.com.br\/pernambuco\/","name":"Pernambuco"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/ricardoantunes.com.br\/pernambuco\/caruaru\/","name":"Caruaru"}},{"@type":"ListItem","position":4,"item":{"@id":"https:\/\/ricardoantunes.com.br","name":"Home"}},{"@type":"ListItem","position":5,"item":{"@id":"https:\/\/ricardoantunes.com.br\/pernambuco\/","name":"Pernambuco"}},{"@type":"ListItem","position":6,"item":{"@id":"https:\/\/ricardoantunes.com.br\/pernambuco\/caruaru\/","name":"Caruaru"}}]}</script>
+	<script
+		type="text/javascript">; !function () { "use strict"; window.jnews = window.jnews || {}, window.jnews.first_load = window.jnews.first_load || {}, window.jnews.first_load = function () { var e = this, t = jnews.library, n = "object" == typeof jnews && "object" == typeof jnews.library; e.data = null, e.run_ajax = !0, e.run_loginregister = !0, e.clear = function () { e.run_ajax = !0, e.run_loginregister = !0, e.data = null }, e.init = function () { n && (t.globalBody.querySelectorAll(".jeg_popup_account").length && jnews.loginregister && e.run_loginregister && (e.run_loginregister = !1, jnews.loginregister.init(), jnews.loginregister.hook_form()), jfla.length && e.run_ajax && (e.run_ajax = !1, e.do_ajax({ action: "jnews_first_load_action", jnews_id: jnewsoption.postid, load_action: jfla }))) }, e.update_counter = function () { if (n) { var o = { total_view: t.globalBody.querySelectorAll(".jeg_share_stats .jeg_views_count .counts"), total_share: t.globalBody.querySelectorAll(".jeg_share_stats .jeg_share_count .counts"), total_comment: t.globalBody.querySelectorAll(".jeg_meta_comment a span") }; t.forEach(Object.entries(e.data.counter), (function ([e, n]) { o[e].length && t.forEach(o[e], (function (e, o) { t.setText(e, n) })) })) } }, e.do_ajax = function (o) { if (n) { var a = new XMLHttpRequest; a.onreadystatechange = function () { XMLHttpRequest.DONE === a.readyState && 200 == a.status && (e.data = JSON.parse(a.responseText), e.data.counter && "object" == typeof e.data.counter && e.update_counter()) }, a.open("POST", jnews_ajax_url, !0), a.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"), a.send(t.httpBuildQuery(o)) } } }, window.jnews.first_load = new window.jnews.first_load, jnews.first_load.init() }();</script>
+
+
+
+
+</body>
+
+</html>
